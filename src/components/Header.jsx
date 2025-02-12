@@ -1,21 +1,23 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Logo from '../assets/logo11.svg';
+import { useNavigate } from 'react-router';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav className='flex items-center justify-between px-6 lg:px-20 relative z-30 py-6'>
-      <div>
+      <div onClick={() => navigate('/')} className='cursor-pointer'>
         <img src={Logo} alt='Logo' />
       </div>
       
       {/* Desktop Navigation */}
       <ul className='hidden lg:flex items-center space-x-20'>
-        <li className='text-[#9e9e9e] hover:text-white font-[16px] font-semibold  cursor-pointer'>MarketPlace</li>
-        <li className='text-[#9e9e9e] hover:text-white font-[16px] font-semibold cursor-pointer'>Enterprise</li>
-        <li className='text-[#9e9e9e] hover:text-white font-[16px] font-semibold cursor-pointer'>Pricing</li>
+        <li onClick ={() => navigate('/marketplace')} className='text-[#9e9e9e] hover:text-white font-[16px] font-semibold  cursor-pointer'>MarketPlace</li>
+        <li onClick ={() => navigate('/enterprise')} className='text-[#9e9e9e] hover:text-white font-[16px] font-semibold cursor-pointer'>Enterprise</li>
+        <li onClick ={() => navigate('/pricing')} className='text-[#9e9e9e] hover:text-white font-[16px] font-semibold cursor-pointer'>Pricing</li>
       </ul>
       <div className='hidden lg:flex items-center space-x-10'>
         <button className='text-[#9e9e9e] hover:text-white font-[16px] font-semibold  cursor-pointer'>Log In</button>
