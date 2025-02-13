@@ -5,8 +5,9 @@ const HeroSection = () => {
     <div className="">
       <div className="w-100 h-[1px] mt-[20px] mx-auto mb-[20px] max-w-[400px] border-bg"></div>
       <div className="cursor-pointer decoration-none text-white transition-hero">
-        <div className="relative z-[10px]">
-            <div className="flex gap-[40px] items-center justify-center">
+        <div className="relative z-[10px">
+            <div className="flex items-center gap-4 justify-center">
+                <div className="flex gap-[40px]  ">
                 <div className="max-w-[100%]">
                     <div className="relative">
                     <img
@@ -26,8 +27,10 @@ const HeroSection = () => {
                   />
                     </div>
                 </div>
-                <span>Trusted by 20k+ users</span>
-
+                <span className="text-[#9e9e9e]">Trusted by 20k+ users</span>
+            </div>
+            <div className="w-[1px] h-[12px] line-bg"></div>
+            <span className="text-[#9e9e9e]">Rated 4.9 from 260+ reviews</span>
             </div>
 
         </div>
