@@ -2,6 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
+    <div>
     <section className="text-white text-center py-6 px-6">
       {/* Top Badge */}
       <div className="flex justify-center text-center mb-4">
@@ -36,7 +37,7 @@ const Hero = () => {
       </h1>
 
       <div className="flex  flex-col lg:flex-row  justify-center w-[100%] min-w-[380px] align-items space-x-8">
-        <p className="text-gray-400 items-center lg:text-left text-[22px] mt-4">
+        <p className="text-[#9e9e9e] items-center lg:text-left text-[22px] mt-4">
           Experience a visual website builder
           <br /> with limitless customization capabilities.
         </p>
@@ -54,6 +55,8 @@ const Hero = () => {
         </div>
         </div>
     </section>
+    
+    </div>
     
   );
 };
