@@ -1,4 +1,7 @@
 import React from 'react'
+import Template from "../assets/templateIcon.svg"
+import Plugins from "../assets/pluginIcon.svg"
+import Applications from "../assets/ApplicationIcon.svg"
 
 const Market = () => {
   return (
@@ -9,7 +12,10 @@ const Market = () => {
             Browse the website templates and plugins for professional and personal projects,made by our community</p>
         </div>
 
-        <div className=''>
+        <div className='grid gap-[20px] grid-cols-3'>
+            <div className='cursor-pointer block bg-[#1f1f1f] align-left p-[24px] rounded-[24px] text-white transition-all duration-[200ms] ease-linear'>
+
+            </div>
 
         </div>
       
