@@ -4,8 +4,8 @@ import HeroSection from '../../components/HeroSection';
 
 const Home = () => {
   return (
-    <div className='relative z-30'>
-      <Hero/>
+    <div className='rlative lg: z-30'>
+      <Hero/>e
       <HeroSection/>
     </div>
   )
