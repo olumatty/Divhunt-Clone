@@ -42,7 +42,7 @@ body{
     line-height: 1.4;
 }
 
-body main .section{
+ .section{
     background: var(--Black);
     transition: all 250ms ease;
     padding-top: 18px;
@@ -54,6 +54,14 @@ body main .section{
     transform: translateY(0px);
     pointer-events: auto;
 }
+.browser:hover{
+  cursor: pointer;
+  transition: all 200ms 0mslinear;
+  text-decoration: none;
+  color: var(--White);
+
+}
+
 
 .button{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.10) 100%);

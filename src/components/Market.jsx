@@ -17,7 +17,7 @@ const Market = () => {
           </p>
 
           <div className="grid gap-[20px] grid-cols-3">
-            <div className="cursor-pointer block bg-[#1f1f1f] text-left p-[24px] rounded-[24px] text-white transition-all duration-[200ms] ease-linear">
+            <div className="cursor-pointer block bg-[#1f1f1f] text-left p-[24px] rounded-[24px] text-white hover:bg-[#2b2b2b] transition-all duration-[200ms] ease-linear">
               <img
                 src={Template}
                 loading="lazy"
@@ -31,7 +31,7 @@ const Market = () => {
               </p>
             </div>
 
-            <div className="cursor-pointer block bg-[#1f1f1f] text-left p-[24px] rounded-[24px] text-white transition-all duration-[200ms] ease-linear">
+            <div className="cursor-pointer block bg-[#1f1f1f] text-left p-[24px] rounded-[24px] text-white transition-all hover:bg-[#2b2b2b] duration-[200ms] ease-linear">
               <img
                 src={Plugins}
                 loading="lazy"
@@ -47,7 +47,7 @@ const Market = () => {
 
             <div
               className="cursor-pointer block bg-[#1f1f1f] text-left p-[24px] rounded-[24px] 
-             text-white transition-all duration-[200ms] ease-linear"
+             text-white transition-all duration-[200ms] ease-linea hover:bg-[#2b2b2b]"
             >
               <img
                 src={Applications}
