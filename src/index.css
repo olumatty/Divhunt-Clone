@@ -152,6 +152,48 @@ body{
     padding-bottom: 60px;
 }
 
+.t306 {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 60px;
+}
+
+/* Ensure grid layout applies on smaller screens */
+@media screen and (max-width: 480px) {
+  .t306 {
+      display: grid !important; /* Ensure it overrides flex */
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 20px; /* Adjust spacing */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .t306 {
+      column-gap: 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .t306 {
+      justify-content: space-between;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+   .t298 {
+      row-gap: 60px;
+      flex-direction: column;
+  }
+}
+
+.t298 {
+  display: flex
+;
+  column-gap: 60px;
+  justify-content: space-between;
+}
+
 .New {
     background: linear-gradient(0deg, #a375ff 0%, #5e2ebe 100%);
     box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.24) inset;
