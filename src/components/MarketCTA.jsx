@@ -1,5 +1,5 @@
 import React from "react";
-import Video from "../assets/7f5e7754191cb457df33fb4e3ca7437e_75260.mp4"
+import Video from "../assets/b0630152a46c04c2337983e02f60ffea_783172.mp4"
 
 const MarketCTA = () => {
   return (
@@ -20,7 +20,7 @@ const MarketCTA = () => {
             </div>
           </div>
         </div>
-        <video src={Video} loop muted autoPlay playsInline className="t3051 video left-[3%] md:left-[5%] lg:left-[40%]"></video>
+        <video src={Video} loop muted autoPlay playsInline className="t3051 video "></video>
 
         
       </div>

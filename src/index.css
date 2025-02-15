@@ -105,10 +105,14 @@ body{
     border-bottom: 1px solid var(--Grey-Bg);
 }
 @media screen and (max-width: 991px) {
-
+  .t3051 {
+    left: -73%;
 }
+}
+
  .t3051 {
   top: auto;
+  left: 4%;
   right: 0%;
   bottom: 0%;
   display: block;
