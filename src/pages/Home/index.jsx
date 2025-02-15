@@ -4,7 +4,7 @@ import HeroSection from '../../components/HeroSection';
 
 const Home = () => {
   return (
-    <div className='rlative lg: z-30'>
+    <div className='relative lg:z-30 pt-[80px]'>
       <Hero/>e
       <HeroSection/>
     </div>

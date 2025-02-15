@@ -1,23 +1,49 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Logo from "../assets/logo11.svg";
 import { useNavigate } from "react-router";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const navigate = useNavigate();
 
+  // Function to handle scrolling
+  const handleScroll = () => {
+    if (window.scrollY > lastScrollY) {
+      // Scrolling down
+      setIsVisible(false);
+    } else {
+      // Scrolling up
+      setIsVisible(true);
+    }
+    setLastScrollY(window.scrollY);
+  };
+
+  // Add and remove event listener
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <div className="sticky top-0 z-9999">
-      <section className="section section-main">
-        <div className="w-[100%] max-w-[1400px] mt-0 ml-auto mr-auto px-[20px] mb-0">
-          <nav className="flex items-center justify-between px-6 lg:px-20 sticky top-0 z-9999 py-6">
+    <div
+      className={`fixed top-0 w-full z-[9999] h-[80px] transition-transform duration-300 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
+      <section className="section section-main bg-[#070709] shadow-md">
+        <div className="w-full max-w-[1400px] mx-auto px-4">
+          <nav className="flex items-center justify-between py-4">
             <div onClick={() => navigate("/")} className="cursor-pointer">
               <img src={Logo} alt="Logo" />
             </div>
 
             {/* Desktop Navigation */}
-            <ul className="hidden lg:flex items-center space-x-20">
+            <ul className="hidden lg:flex w-full max-w-[800px] justify-center items-center space-x-10">
               <li
                 onClick={() => navigate("/marketplace")}
                 className="text-[#9e9e9e] hover:text-white text-[16px] font-semibold cursor-pointer"
@@ -39,10 +65,10 @@ const Header = () => {
             </ul>
 
             <div className="hidden lg:flex items-center space-x-10">
-              <button className="text-[#9e9e9e] hover:text-white font-[16px] cursor-pointer">
+              <button className="text-[#9e9e9e] hover:text-white text-[16px] font-semibold cursor-pointer">
                 Log In
               </button>
-              <button className="text-white button px-[24px] py-[12px] cursor-pointer font-semibold rounded-lg hover:bg-opacity-80">
+              <button className="text-white button px-6 py-3 cursor-pointer font-semibold rounded-lg hover:bg-opacity-80">
                 Build for free
               </button>
             </div>
@@ -53,11 +79,7 @@ const Header = () => {
                 onClick={() => setIsOpen(!isOpen)}
                 className="text-white cursor-pointer focus:outline-none"
               >
-                {isOpen ? (
-                  <X size={30} className="text-white" />
-                ) : (
-                  <Menu size={30} className="text-white" />
-                )}
+                {isOpen ? <X size={30} /> : <Menu size={30} />}
               </button>
             </div>
 
