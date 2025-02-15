@@ -5,7 +5,7 @@ import Applications from "../assets/ApplicationIcon.svg";
 
 const Market = () => {
   return (
-    <div className="relative pt-[60px] pb-[60px]">
+    <div className="relative pt-[80px] pb-[60px]">
       <div className="relative z-10 w-[100%] block max-w-[1400px] mt-0 ml-auto mr-auto px-[20px] mb-0">
         <div className="w-[100%] max-w-[820px] text-center ml-auto mr-auto">
           <h1 className="leading-1 mb-10 text-[34px] md:text-[46px] lg:text-[58px] font-[400] mt-0 whitespace-break-spaces">

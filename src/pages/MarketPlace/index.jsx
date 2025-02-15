@@ -3,7 +3,7 @@ import Market from '../../components/Market'
 import Templates from '../../components/templates'
 const MarketPlace = () => {
   return (
-    <div className=''>
+    <div className='pt-[80px]'>
       <Market/>
       <Templates/>
        
