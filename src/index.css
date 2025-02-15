@@ -62,7 +62,6 @@ body{
 
 }
 
-
 .button{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.10) 100%);
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.24);
@@ -105,10 +104,25 @@ body{
     margin-right: auto;
     border-bottom: 1px solid var(--Grey-Bg);
 }
+@media screen and (max-width: 991px) {
+
+}
+ .t3051 {
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .video{
     transform: rotate(180deg);
     mix-blend-mode: lighten;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 .video-main{
