@@ -231,6 +231,27 @@ body{
       flex-direction: row;
     }
   }
+
+  @media screen and (max-width: 991px) {
+    .t1444 {
+        row-gap: 60px;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 767px) {
+   .t1442 {
+      padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .t1442 {
+      padding-bottom: 100px;
+  }
+}
+.t1442 {
+  padding-top: 90px;
+  padding-bottom: 140px;
+}
   
   .t3711 {
     border: 1px solid #242424;

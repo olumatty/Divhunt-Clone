@@ -1,9 +1,10 @@
 import React from 'react'
+import Eform from '../../components/Eform'
 
 const Enterprise = () => {
   return (
-    <div>
-      Enterprise
+    <div className=''>
+      <Eform/>
     </div>
   )
 }
