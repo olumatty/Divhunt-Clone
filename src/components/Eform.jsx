@@ -43,7 +43,7 @@ const Eform = () => {
                 <input
                   required
                   placeholder="John"
-                  className="bg-[#242424] block border border-black py-3 px-5 text-[10px] rounded-[10px] text-white outline-none w-full"
+                  className="bg-[#242424] block border border-black py-3 px-5 text-[12px] rounded-[10px] text-white outline-none w-full"
                 />
               </div>
               <div className="w-full">
@@ -51,7 +51,7 @@ const Eform = () => {
                 <input
                   required
                   placeholder="Doe"
-                  className="bg-[#242424] block border border-black py-3 px-5 text-[10px] rounded-[10px] text-white outline-none w-full"
+                  className="bg-[#242424] block border border-black py-3 px-5 text-[12px] rounded-[10px] text-white outline-none w-full"
                 />
               </div>
             </div>
@@ -62,7 +62,7 @@ const Eform = () => {
                 <input
                   required
                   placeholder="work@email.com"
-                  className="bg-[#242424] block border border-black py-3 px-5 text-[10px] rounded-[10px] text-white outline-none w-full"
+                  className="bg-[#242424] block border border-black py-3 px-5 text-[12px] rounded-[10px] text-white outline-none w-full"
                 />
               </div>
               <div className="w-full">
@@ -70,7 +70,7 @@ const Eform = () => {
                 <input
                   required
                   placeholder="+"
-                  className="bg-[#242424] block border border-black py-3 px-5 text-[10px] rounded-[10px] text-white outline-none w-full"
+                  className="bg-[#242424] block border border-black py-3 px-5 text-[12px] rounded-[10px] text-white outline-none w-full"
                 />
               </div>
             </div>
@@ -81,7 +81,7 @@ const Eform = () => {
                 <input
                   required
                   placeholder="Your company name"
-                  className="bg-[#242424] block border border-black py-3 px-5 text-[10px] rounded-[10px] text-white outline-none w-full"
+                  className="bg-[#242424] block border border-black py-3 px-5 text-[12px] rounded-[10px] text-white outline-none w-full"
                 />
               </div>
               <div className="w-full">
@@ -89,7 +89,7 @@ const Eform = () => {
                 <input
                   required
                   placeholder="200-500"
-                  className="bg-[#242424] block border border-black py-3 px-5 text-[10px] rounded-[10px] text-white outline-none w-full"
+                  className="bg-[#242424] block border border-black py-3 px-5 text-[12px] rounded-[10px] text-white outline-none w-full"
                 />
               </div>
             </div>
@@ -100,7 +100,7 @@ const Eform = () => {
                 <input
                   required
                   placeholder="Lead developer"
-                  className="bg-[#242424] block border border-black py-3 px-5 rounded-[10px] text-white outline-none w-full"
+                  className="bg-[#242424] block border border-black py-3 px-5 text-[12px] rounded-[10px] text-white outline-none w-full"
                 />
               </div>
               <div className="w-full">
@@ -108,9 +108,21 @@ const Eform = () => {
                 <input
                   required
                   placeholder="France"
-                  className="bg-[#242424] block border border-black py-3 px-5 rounded-[10px] text-white outline-none w-full"
+                  className="bg-[#242424] block border border-black py-3 px-5 text-[12px] rounded-[10px] text-white outline-none w-full"
                 />
               </div>
+            </div>
+
+            <div className="flex gap-x-5 mb-2">
+              <div className="w-full">
+                <label className="text-[14px] mb-2 block">How can we help your business?</label>
+                <textarea name="comment" required="true" placeholder="Telll us more..." className="h-50 text-[12px] resize-none py-[10px] px-5 bg-[#242424] rounded-[10px] text-white block border border-black outline-none w-full"></textarea>
+              </div>
+            </div>
+            <div className="relative w-full text-center rounded-[10px] py-3 px-6 font-[500] cursor-pointer overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#a375ff] to-[#5E2EBE] shadow-[inset_0px_1px_0px_rgba(255,255,255,0.24)] transition-all duration-300 group-hover:opacity-0"></div>
+                <div className="absolute inset-0 opacity-0 bg-gradient-to-t from-[#5E2EBE] to-[#a375ff] shadow-[inset_0px_1px_0px_rgba(255,255,255,0.24)] transition-all duration-300 group-hover:opacity-100"></div>
+                <button type="submit" className="relative z-10 text-white">Contact Sales</button>
             </div>
           </form>
         </div>
