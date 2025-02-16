@@ -36,15 +36,82 @@ const Eform = () => {
               </div>
             </div>
           </div>
-          <form className=" w-full md:max-w-[680px] max-w-full">
-            <div className="flex gap-x-[20px] mb-[10px]">
-                <div className="w-full">
-                    <label className="text-[14px] mb-[10px]">First name</label>
-                    <input className="bg-[#242424] border border-black"
-                </div>
-                <div></div>
+          <form className="w-full md:max-w-[680px]">
+            <div className="flex gap-x-5 mb-2">
+              <div className="w-full">
+                <label className="text-[14px] mb-2 block">First name</label>
+                <input
+                  required
+                  placeholder="John"
+                  className="bg-[#242424] block border border-black py-3 px-5 text-[10px] rounded-[10px] text-white outline-none w-full"
+                />
+              </div>
+              <div className="w-full">
+                <label className="text-[14px] mb-2 block">Last name</label>
+                <input
+                  required
+                  placeholder="Doe"
+                  className="bg-[#242424] block border border-black py-3 px-5 text-[10px] rounded-[10px] text-white outline-none w-full"
+                />
+              </div>
             </div>
 
+            <div className="flex gap-x-5 mb-2">
+              <div className="w-full">
+                <label className="text-[14px] mb-2 block">Business email</label>
+                <input
+                  required
+                  placeholder="work@email.com"
+                  className="bg-[#242424] block border border-black py-3 px-5 text-[10px] rounded-[10px] text-white outline-none w-full"
+                />
+              </div>
+              <div className="w-full">
+                <label className="text-[14px] mb-2 block">Phone number</label>
+                <input
+                  required
+                  placeholder="+"
+                  className="bg-[#242424] block border border-black py-3 px-5 text-[10px] rounded-[10px] text-white outline-none w-full"
+                />
+              </div>
+            </div>
+
+            <div className="flex gap-x-5 mb-2">
+              <div className="w-full">
+                <label className="text-[14px] mb-2 block">Company name</label>
+                <input
+                  required
+                  placeholder="Your company name"
+                  className="bg-[#242424] block border border-black py-3 px-5 text-[10px] rounded-[10px] text-white outline-none w-full"
+                />
+              </div>
+              <div className="w-full">
+                <label className="text-[14px] mb-2 block">Company Size</label>
+                <input
+                  required
+                  placeholder="200-500"
+                  className="bg-[#242424] block border border-black py-3 px-5 text-[10px] rounded-[10px] text-white outline-none w-full"
+                />
+              </div>
+            </div>
+
+            <div className="flex gap-x-5 mb-2">
+              <div className="w-full">
+                <label className="text-[14px] mb-2 block">Job title</label>
+                <input
+                  required
+                  placeholder="Lead developer"
+                  className="bg-[#242424] block border border-black py-3 px-5 rounded-[10px] text-white outline-none w-full"
+                />
+              </div>
+              <div className="w-full">
+                <label className="text-[14px] mb-2 block">Country</label>
+                <input
+                  required
+                  placeholder="France"
+                  className="bg-[#242424] block border border-black py-3 px-5 rounded-[10px] text-white outline-none w-full"
+                />
+              </div>
+            </div>
           </form>
         </div>
       </div>
