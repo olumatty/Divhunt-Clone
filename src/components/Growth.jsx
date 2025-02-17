@@ -1,6 +1,6 @@
 import React from "react";
 import Growths from "../assets/GrowthEnterprise.svg";
-
+import BackgroundImage from "../assets/stripebg.svg"
 const Growth = () => {
   return (
     <div className="relative pt-15 pb-[100px] lg:pb-[140px]">
@@ -18,20 +18,39 @@ const Growth = () => {
               <p className="text-[#a375ff] font-[500]">Growth</p>
             </div>
             <div className="mb-[60px] block">
-                <div className="flex gap-x-[60px] items-end justify-between">
-                    <div className="max-w-[654px] md:max-w-1/2 max-w-full">
-                    <h2 className="text-left mb-0 lg:text-[48px] text-[42px] text-balance lg:mb-4 ">Focus on growth, we’ll handle the rest</h2>
-                    </div>
-
-                    <div className="max-w-[400px] w-full lg:max-w-[430px]">
-                        <p className="mb-0  lg:mb-6 text-[#9e9e9e]">Let our team build or transfer your site to Divhunt while you focus on growing your business. Enjoy unlimited features, seamless scaling, and top-notch performance without the hassle.</p>
-                        
-                    </div>
-
+              <div className="flex flex-col sm:flex-row gap-6 sm:gap-x-[60px] items-start sm:items-end justify-between">
+                <div className="max-w-[654px] md:max-w-1/2 w-full">
+                  <h2 className="text-left mb-0 text-[32px] sm:text-[42px] lg:text-[48px] text-balance lg:mb-4">
+                    Focus on growth, we’ll handle the rest
+                  </h2>
                 </div>
+
+                <div className="max-w-[400px] w-full lg:max-w-[430px]">
+                  <p className="mb-0 lg:mb-6 text-[#9e9e9e]">
+                    Let our team build or transfer your site to Divhunt while
+                    you focus on growing your business. Enjoy unlimited
+                    features, seamless scaling, and top-notch performance
+                    without the hassle.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-y-[15px] sm:gap-x-[24px] items-start sm:items-center" hidden="true">
+                        <div className="flex gap-x-[10px] items-center cursor-pointer transition-all duration-200 ease-linear"></div>
+                        <div className="flex gap-x-[10px] items-center cursor-pointer transition-all duration-200 ease-linear"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="border border-[#242424] py-[20px] px-[20px]">
+                <div 
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border border-[#242424] overflow-hidden relative rounded-[20px] p-[20px] bg-cover bg-no-repeat"
+                style={{ backgroundImage: `url(${BackgroundImage})` }}
+                >
+                
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
   );
