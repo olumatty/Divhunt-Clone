@@ -109,6 +109,9 @@ body{
     left: -73%;
 }
 }
+.form-bg{
+  background: linear-gradient(0deg, rgba(23, 23, 23, 0.00) 0%, #171717 100%);
+}
 
  .t3051 {
   top: auto;
