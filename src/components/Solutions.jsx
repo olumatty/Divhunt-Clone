@@ -6,6 +6,7 @@ import Design from "../assets/Design.svg";
 import Site from "../assets/Site.svg";
 import SEO from "../assets/SEO.svg";
 import Maintenance from "../assets/Maintenance.svg";
+import Videos from "../assets/b0630152a46c04c2337983e02f60ffea_783172.mp4"
 
 const Solutions = () => {
   return (
@@ -133,9 +134,9 @@ const Solutions = () => {
               </p>
             </motion.div>
           </div>
-          ;
         </div>
       </div>
+      <video src={Videos} loop muted autoPlay playsInline className="t1524 videoupside"></video>
     </div>
   );
 };
