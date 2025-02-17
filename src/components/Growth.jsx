@@ -98,7 +98,29 @@ const Growth = () => {
                       <p className="text-[#9e9e9e] text-[18px]">Scale your site infinitely with business growth, ensuring instant load times, smooth experiences, no complex setups.</p>
                     </div>
                   </div>
+                  <div className="grid gap-y-[60px] gap-x-[60px] grid-cols-2">
+                    <div>
+                        <p className="text-[#a375ff] mb-[10px] text-[30px] lg:text-[32px]">200%</p>
+                        <p className="text-[14px]">Faster project completion</p>
+                    </div>
+
+                    <div>
+                        <p className="text-[#a375ff] mb-[10px] text-[30px] lg:text-[32px]">50%</p>
+                        <p className="text-[14px]">Reduction in development costs</p>
+                    </div>
+
+                    <div>
+                        <p className="text-[#a375ff] mb-[10px] text-[30px] lg:text-[32px]">100%</p>
+                        <p className="text-[14px]">Custom solutions for your needsn</p>
+                    </div>
+
+                    <div>
+                        <p className="text-[#a375ff] mb-[10px] text-[30px] lg:text-[32px]">100%</p>
+                        <p className="text-[14px]">Scalable to meet enterprise needs</p>
+                    </div>
+                  </div>
                 </div>
+                
               </div>
             </div>
           </div>

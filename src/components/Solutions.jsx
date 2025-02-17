@@ -27,7 +27,7 @@ const Solutions = () => {
               <img
                 src={Right_Arrow}
                 alt="Right Arrow"
-                className="transition-all duration-200 ease-in-out hover:translate-x-1 cursor-pointer"
+                className="transition-all duration-200 ease-in-out hover:translate-x-2 cursor-pointer"
               />
             </div>
           </div>

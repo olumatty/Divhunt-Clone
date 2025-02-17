@@ -31,7 +31,7 @@ const Eform = () => {
                   src={Arrow}
                   alt="Arrow"
                   loading="lazy"
-                  className="transition-all duration-200 ease-in-out hover:translate-x-1"
+                  className="transition-all duration-200 ease-in-out hover:translate-x-2"
                 />
               </div>
             </div>
