@@ -2,7 +2,9 @@ import React from 'react'
 import Trusts from "../assets/Trust.svg"
 import Right_Arrow from "../assets/arrow-right.svg"
 import Discord from "../assets/Discord.svg"
-import Blue_Arrow from "../assets/"
+import Blue_Arrow from "../assets/blue.svg";
+import BackgroundImage from "../assets/stripebg.svg";
+import Image1 form "../assets/P"
 
 const Trust = () => {
   return (
@@ -28,15 +30,30 @@ const Trust = () => {
                         <div className="flex text-[#5865F2] gap-x-[10px] tems-center cursor-pointer transition-all duration-200 ease-linear">
                             <img src={Discord} alt='discord' className='transition-all duration-200 ease-in-out hover:translate-x-2'/>
                             <p>Join our Discord</p>
-                            <img src={Right_Arrow} alt='arrow' className='transition-all duration-200 ease-in-out hover:translate-x-2'/>
+                            <img src={Blue_Arrow} alt='arrow' className='transition-all duration-200 ease-in-out hover:translate-x-2'/>
+                        </div>
+                    </div>  
+                </div>
+                <div>
+                    <div className="border border-[#242424] py-[20px] px-[20px] rounded-[20px]">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border border-[#242424] overflow-hidden relative rounded-[20px] gap-y-[20px] md:gap-x-[20px] lg:gap-y-[30px] p-[20px] bg-cover bg-no-repeat"
+                            style={{ backgroundImage: `url(${BackgroundImage})` }}>
+                                <div className='border border-[#242424] flex bg-[#070709] transition-all duration-400 ease-in-out hover:bg-[#9e9e9e] px-[30px] flex-col justify-between py-[30px] rounded-[20px] cursor-pointer leading[1.4]'>
+                                    <div className="flex items-start flex-col ">
+                                        <p class="t882">Rebuilding our application with the Divhunt team was the best decision I've ever made. The team has a great ability to adapt to their clients, learning so much about our business and offering numerous ideas for improving our application. Now, the application is 10x better than it was before, and I won't even start on the speed—it's blazing fast!</p>
+                                    </div>
+                                    <div className='flex gap-y-[10px] mt-[40px] items-center'>
+                                        <img src={} alt='' className=''/>
+
+                                    </div>
+                                </div>
                         </div>
 
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-      
     </div>
   )
 }
