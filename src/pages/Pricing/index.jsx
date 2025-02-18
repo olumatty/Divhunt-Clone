@@ -1,9 +1,11 @@
 import React from "react";
 import Eform from "../../components/Eform";
+import Price from "../../components/Price";
 
 const Pricing = () => {
   return (
-   <div className="pt-[80px]">
+   <div className="">
+    <Price/>
    
    </div>
   );
