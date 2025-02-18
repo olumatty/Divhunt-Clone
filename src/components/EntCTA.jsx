@@ -14,7 +14,7 @@ const EntCTA = () => {
 
             {/* Right Side */}
             <div className="max-w-[453px]">
-              <p className="mb-[30px] text-[22px]">
+              <p className="mb-[30px] text-[18px]">
                 Build and host your site with a custom domain for free. Upgrade
                 anytime for expanded limits.
               </p>
