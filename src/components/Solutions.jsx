@@ -69,7 +69,7 @@ const Solutions = () => {
             </div>
           </div>
           {/* Right Side Comment Component */}
-          <div className="w-full lg:max-w-[620px] lg:ml-auto grid grid-cols-2 gap-[20px]">
+          <div className="w-full lg:max-w-[620px] lg:ml-auto grid grid-cols-1 md:grid-cols-2 gap-[20px]">
             <motion.div
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
