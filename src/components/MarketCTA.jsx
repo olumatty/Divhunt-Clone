@@ -11,7 +11,7 @@ const MarketCTA = () => {
               Create and sell your templates and plugins
             </h2>
             <div className="max-w-[453px]">
-              <div className="orelative overflow-hidden inline-block px-6 py-3 rounded-[10px] bg-white text-[#070709] hover:bg-[#9e9e9e] font-medium cursor-pointer transition-all duration-200  no-underline">
+              <div className="relative overflow-hidden inline-block px-6 py-3 rounded-[10px] bg-white text-[#070709] hover:bg-[#9e9e9e] font-medium cursor-pointer transition-all duration-200  no-underline">
                 <div className="absolute top-0 left-0 right-0 bottom-0 h-full opacity-0 bg-[linear-gradient(180deg,_#ffffff_0%,_#9e9e9e_100%)] transition-all duration-300 ease-in-out mx-auto "></div>
                 <p className="relative z-10 whitespace-break-spaces my-0 ">
                   Start Creating

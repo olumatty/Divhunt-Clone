@@ -6,6 +6,7 @@ import Trust from '../../components/Trust'
 import Offer from '../../components/Offer'
 import Features from '../../components/Features'
 import Infrastructure from '../../components/Infrastructure'
+import EntCTA from '../../components/EntCTA'
 
 const Enterprise = () => {
   return (
@@ -17,6 +18,7 @@ const Enterprise = () => {
       <Offer/>
       <Features/>
       <Infrastructure/>
+      <EntCTA/>
     </div>
   )
 }
