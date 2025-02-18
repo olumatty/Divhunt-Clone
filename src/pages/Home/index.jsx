@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className='relative lg:z-30 pt-[80px]'>
       <Hero/>
-      <HeroSection/>
+      
     </div>
   )
 }
