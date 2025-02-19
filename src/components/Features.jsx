@@ -38,7 +38,7 @@ const Features = () => {
                             <p className='mb-[10px] text-[22px] font-[500]'>Features priority</p>
                             <p className='text-[#9e9e9e] text-[18px] my-0'>Your enterprise needs lead the way. We fast-track development of any essential feature you require, ensuring your operations stay ahead.</p>
                         </div>
-                        <img src={FeaturesImage2} alt="image" className=''/>
+                        <img src={FeaturesImage2} alt="image" className='text-[#9e9e9e] flex gap-x-[6]'/>
                     </div>
                 </div>
             </div>
