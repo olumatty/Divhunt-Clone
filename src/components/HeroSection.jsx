@@ -1,38 +1,25 @@
 import React from "react";
-import video from "../assets/7f5e7754191cb457df33fb4e3ca7437e_75260.mp4";
-import Image from "../assets/293b415ad32296619bdb3c1cce31196b_100352.webp";
 
 const HeroSection = () => {
   return (
-    <section className="">
-      <div className="relative">
-        <div className="overflow-hidden relative z-10 md:mt-0 lg:mt-30 inset-0 flex justify-center items-center">
-          <img
-            src={Image}
-            alt="Overlay Content"
-            className="w-[100%] md:w-[90%] max-w-[1240px] "
-          />
-        </div>
-      </div>
-      <div
-        className="absolute top-[60%] md:top-[50%] z-3 mix-blend-color-dodge left-0 right-0 w-full h-[20%] inset-0 opacity-20"
-        style={{
-          backgroundImage:
-            "url('https://img.freepik.com/premium-vector/simple-abstract-background-pattern-art-work_733980-1781.jpg?ga=GA1.1.1107059902.1739532124&semt=ais_hybrid')",
-          backgroundRepeat: "repeat",
-        }}
-      ></div>
+    <section className="pb-[60px] lg:pb-[110px]">
+      <div className="bg-gradient-to-t from-[#171717] to-[rgba(23,23,23,0)] pt-[100px] lg:pt-[225px] border-b border-[#242424] pb-[60px]">
+        <div className='w-full max-w-[1400p] mx-auto px-[20px]'>
+          <div className='flex flex-col lg:flex-row items-start lg:items-end justify-between gap-y-[20px] md:gap-y-[40px] lg:gap-x-[60px] lg:gap-y-0'>
+            <h2 className='w-full text-balance text-[36px] md:text-[42px] lg:text-[48px] font-[400] leading-[1.2] mt-0'>
+            Truly unlimited website builder with features that matter
+            </h2>
 
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="video-main main-video video md:top[45%] top-[60%]"
-      >
-        <source src={video} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+            <p className='w-full max-w-[443px] text-[#9e9e9e] text-[18px]'>At Divhunt, we’re not just building features—we’re removing barriers so you can create anything, your way. If it can be coded, it can be built visually in Divhunt.</p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div></div>
+      
     </section>
   );
 };
