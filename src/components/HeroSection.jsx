@@ -6,6 +6,7 @@ import CustomBreak from "../assets/Custom.svg"
 import Customcss from "../assets/customcss.svg";
 import Builder from "../assets/Builder.webp"
 import Greenbg from "../assets/bg image.webp"
+import playbutton from "../assets/9d4ab70489800dd4071af1d7a3f2d23a_979.svg"
 
 const HeroSection = () => {
   return (
@@ -91,8 +92,9 @@ const HeroSection = () => {
             </div>
             {/*Right hand side */}
             <div className="flex max-w-[1130px] w-full flex-col gap-y-[80px] md:gap-y-[100px] lg:gap-y-[120px]">
-              <div className="">
-                <h2 className="text-[36px] md:text-[42px] lg:text-[48px] mb-[40px] font-[400] leading-[1.2]">
+              <div id="builder" className="">
+
+                <h2 className="text-[36px] md:text-[42px] lg:text-[48px] mb-[30px] font-[400] leading-[1.2]">
                   Visuals Builder
                 </h2>
                 <div className="Card-animation">
@@ -200,7 +202,7 @@ const HeroSection = () => {
                            ease-in-out translate-x-2 items-center mx-auto flex-col backdrop-blur-[50px] justify-center '>
                             <div className='flex gap-y-[5px] flex-col'>
                               <a href='#' className="flex gap-x-[10px] items-center py-[17px] px-[20px] justify-center rounded-[100px] bg-[rgba(255, 255, 255, 0.15)] transition-all duration-250 ease-in-out">
-                                
+                                <img src={playbutton} alt=''/>
                               </a>
                             </div>
                            </div>
@@ -208,6 +210,14 @@ const HeroSection = () => {
                     
                   </div>
                 </div>
+              </div>
+              <div id="CMS" className="">
+              <h2 className="text-[36px] md:text-[42px] lg:text-[48px] mb-[30px] font-[400] leading-[1.2]"> Composable CMS</h2>
+              <div className="card-animation"> 
+                <div className="flex bg-[#242424] p-[20px] md:p-[30px] rounded-[20px]">
+                  
+                </div>
+              </div>
               </div>
             </div>
           </div>
