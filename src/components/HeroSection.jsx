@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import Arrow_Right from "../assets/arrow-right.svg";
 import Canvas from "../assets/canvas.svg";
 import Collaboration from "../assets/collaboration.svg";
@@ -9,24 +9,21 @@ import Greenbg from "../assets/bg image.webp";
 import playbutton from "../assets/9d4ab70489800dd4071af1d7a3f2d23a_979.svg";
 import Right_Arrow from "../assets/arrow-right.svg";
 import Coloredbg from "../assets/coloredbg.webp";
-import Composebg from "../assets/composebg.webp" ;
+import Composebg from "../assets/composebg.webp";
 import Fields from "../assets/field.svg";
 import Multi from "../assets/multi.svg";
 import Repeater from "../assets/Repeater.svg";
 import Unlimited from "../assets/limit.svg";
+import Pluginbg from "../assets/pluginbg.webp"
+import PluginImage from "../assets/PluginImage.webp"
+import Extras from "../assets/extras.svg";
+import Custom from "../assets/cPlugin.svg";
+import Income from "../assets/income.svg"
+import Service from "../assets/service.svg"
 
 const HeroSection = () => {
-
-  const handleSmoothScroll = (event, sectionId) => {
-    if (window.innerWidth >= 1024) { // lg breakpoint (Tailwind: lg starts at 1024px)
-      event.preventDefault();
-      const targetSection = document.getElementById(sectionId);
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }
-  };
   
+
   return (
     <section className="pb-[60px] lg:pb-[110px]">
       <div className="bg-gradient-to-t from-[#171717] to-[rgba(23,23,23,0)] pt-[100px] lg:pt-[225px] border-b border-[#242424] pb-[60px]">
@@ -124,7 +121,7 @@ const HeroSection = () => {
                               Develop concepts into reality with robust visual
                               tools
                             </h3>
-                            <p className="text-[16px] text-[#9e9e9e]">
+                            <p className="text-[14px] text-[#9e9e9e]">
                               Experience our next-gen web builder that blends
                               code-based customizations with visual freedom.
                             </p>
@@ -279,51 +276,164 @@ const HeroSection = () => {
                     <div
                       className="mt-[20px] relative p-[10px] md:py-[20px] md:px-[25px] rounded-[10px] lg:rounded-[20px] overflow-hidden bg-cover bg-no-repeat"
                       style={{
-                        backgroundImage: `url(${Coloredbg})`
+                        backgroundImage: `url(${Coloredbg})`,
                       }}
                     >
-                      <img src={Composebg} alt="rounded-[10px] max-w-full"/>
+                      <img src={Composebg} alt="rounded-[10px] max-w-full" />
                     </div>
 
                     <div className="grid grid-cols-2 md:grid-cols-3 mt-[40px] lg:grid-cols-4 gap-x-[20px] md:gap-x-[56px] md:gap-y-[30px]">
-                      <div className=''>
+                      <div className="">
                         <div>
                           <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
-                            <img src={Fields} alt='Icon' className="max-w-full"/>
-                            <p className='text-[14px] whitespace-pre-wrap'>Fields</p>
+                            <img
+                              src={Fields}
+                              alt="Icon"
+                              className="max-w-full"
+                            />
+                            <p className="text-[14px] whitespace-pre-wrap">
+                              Fields
+                            </p>
                           </div>
-                          <p className="text-[#9e9e9e] text-[14px] whitespace-break-spaces">Fit field types to content,<br/>not the other way around.</p>
+                          <p className="text-[#9e9e9e] text-[14px] whitespace-break-spaces">
+                            Fit field types to content,
+                            <br />
+                            not the other way around.
+                          </p>
                         </div>
                       </div>
 
-                      <div className=''>
+                      <div className="">
                         <div>
                           <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
-                            <img src={Multi} alt='Icon' className="max-w-full"/>
-                            <p className='text-[14px] whitespace-pre-wrap'>Multi-relation field</p>
+                            <img
+                              src={Multi}
+                              alt="Icon"
+                              className="max-w-full"
+                            />
+                            <p className="text-[14px] whitespace-pre-wrap">
+                              Multi-relation field
+                            </p>
                           </div>
-                          <p className="text-[#9e9e9e] text-[14px] "> Connect CMS collections and link your content with a few clicks.</p>
+                          <p className="text-[#9e9e9e] text-[14px] ">
+                            {" "}
+                            Connect CMS collections and link your content with a
+                            few clicks.
+                          </p>
                         </div>
                       </div>
 
-                      <div className=''>
+                      <div className="">
                         <div>
                           <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
-                            <img src={Repeater} alt='Icon' className="max-w-full"/>
-                            <p className='text-[14px] whitespace-pre-wrap'>Repeater</p>
+                            <img
+                              src={Repeater}
+                              alt="Icon"
+                              className="max-w-full"
+                            />
+                            <p className="text-[14px] whitespace-pre-wrap">
+                              Repeater
+                            </p>
                           </div>
-                          <p className="text-[#9e9e9e] text-[14px]"> Quickly replicate and customize content to eliminate repetitive tasks.</p>
+                          <p className="text-[#9e9e9e] text-[14px]">
+                            {" "}
+                            Quickly replicate and customize content to eliminate
+                            repetitive tasks.
+                          </p>
                         </div>
                       </div>
 
-                      <div className=''>
+                      <div className="">
                         <div>
                           <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
-                            <img src={Unlimited} alt='Icon' className="max-w-full"/>
-                            <p className='text-[14px] whitespace-pre-wrap'>Unlimited fields</p>
+                            <img
+                              src={Unlimited}
+                              alt="Icon"
+                              className="max-w-full"
+                            />
+                            <p className="text-[14px] whitespace-pre-wrap">
+                              Unlimited fields
+                            </p>
                           </div>
-                          <p className="text-[#9e9e9e] text-[14px] "> Add hundreds of fields to CMS collections without hitting a limit.</p>
+                          <p className="text-[#9e9e9e] text-[14px] ">
+                            {" "}
+                            Add hundreds of fields to CMS collections without
+                            hitting a limit.
+                          </p>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="Plugins" className="">
+                <h2 className="text-[36px] md:text-[42px] lg:text-[48px] mb-[30px] font-[400] leading-[1.2]">
+                  Community Plugins
+                </h2>
+                <div className="card-animation">
+                  <div className="flex bg-[#242424] gap-y-[40px] md:gap-y-[60px] lg:gap-y-0 p-[20px] lg:p-[30px] rounded-[20px] lg:flex-row lg:gap-x-[70px] flex-col-reverse">
+                    <div className='overflow-hidden relative pt-[20px] pr-[20px] rounded-[10px] md:pt-[30px] md:pr-[30px] md:rounded-[20px] bg-cover bg-no-repeat' style={{ backgroundImage: `url(${Pluginbg})` }}>
+                      <img src={PluginImage} alt="image" className="border-tr-[10px] w-full max-w-full"/>
+                    </div>
+                    <div className="w-full max-w-full lg:max-w-[500px] gap-y-[60px] flex flex-col  justify-between">
+                      <div className="w-full max-w-[430px]">
+                        <div className="component">
+                          <div className="">
+                            <div className="mb-[30px] w-full">
+                              <h3 className="text-left text-[30px] md:text-[32px] mb-2 text-balance mt-0">Unlock new features with community-made plugins</h3>
+                              <p className="text-[14px] text-[#9e9e9e]">Transform your design vision into fully functional websites using the full power of HTML, CSS and JS, without writing it.</p>
+                            </div>
+                            <div className='flex gap-x-[px] items-center'>
+                              <div className='flex gap-x-[15px] items-center'>
+                                <div className='flex gap-x-[10px] items-center cursor-pointer transition-all duration-200 ease-linear'>
+                                  <p>Learn more about Plugins</p>
+                                  <img src={Right_Arrow} alt="" className="transition-all duration-200 ease-in-out hover:translate-x-2"/>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        < div className="grid mt-[30px] grid-cols-2 gap-x-[20px] md:gap-x-[80px] md:gap-y-[30px] ">
+                        <div>
+                          <div>
+                            <div className="flex gap-y-[20px] items-start mb-[10px] flex-col">
+                              <img src={Extras} alt="icon" className="max-w-full"/>
+                              <h3 className="text-[14px] ">Free extras</h3>
+                            </div>
+                            <p className="text-[#9e9e9e] text-[12px] whitespace-nowrap">Add extra functionalities to your <br/>website with free plugins</p>
+                          </div>
+                        </div>
+
+                        <div>
+                          <div>
+                            <div className="flex gap-y-[20px] items-start mb-[10px] flex-col">
+                              <img src={Custom} alt="icon" className="max-w-full"/>
+                              <h3 className="text-[14px] ">Custom plugins</h3>
+                            </div>
+                            <p className="text-[#9e9e9e] text-[12px] whitespace-nowrap">Create custom plugins in Divhunt to <br/>add unique functions to any page.</p>
+                          </div>
+                        </div>
+
+                        <div>
+                          <div>
+                            <div className="flex gap-y-[20px] items-start mb-[10px] flex-col">
+                              <img src={Income} alt="icon" className="max-w-full"/>
+                              <h3 className="text-[14px] ">Passive income</h3>
+                            </div>
+                            <p className="text-[#9e9e9e] text-[12px] whitespace-nowrap">Monetize your skills by selling your <br/>plugins in Divhunt’s Marketplace.</p>
+                          </div>
+                        </div>
+
+                        <div>
+                          <div>
+                            <div className="flex gap-y-[20px] items-start mb-[10px] flex-col">
+                              <img src={Service} alt="icon" className="max-w-full"/>
+                              <h3 className="text-[14px] ">Service integrations</h3>
+                            </div>
+                            <p className="text-[#9e9e9e] text-[12px]">Offer Divhunt integrations to expand your service reach.</p>
+                          </div>
+                        </div>
+                      </div>
                       </div>
                     </div>
                   </div>

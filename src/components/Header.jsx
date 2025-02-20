@@ -69,6 +69,12 @@ const Header = () => {
             >
               Pricing
             </li>
+          <li
+              onClick={() => navigate("/Testing")}
+              className="text-[#9e9e9e] hover:text-white text-[16px] font-semibold cursor-pointer"
+            >
+              Testing
+            </li>
           </ul>
 
           {/* Desktop Buttons */}
