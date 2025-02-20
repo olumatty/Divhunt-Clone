@@ -35,15 +35,47 @@ const Homfrastructure = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className=' grid grid-cols-2 gap-[60px]'>
+                        <div className=' grid grid-cols-2 gap-[60px] mt-[30px]'>
                             <div>
                                 <div>
                                     <div className='flex flex-row gap-x-[5px] items-center gap-y-[15px] mb-[10px]'>
                                         <img src ={Fast} alt='icon' className='max-w-full'/>
-
+                                        <h3 className='text-[14px]'>Fast indexing</h3>
                                     </div>
+                                    <p className='text-[#9e9e9e] text-[12px]'>Impress clients with low crawl budget sites for quick SEO indexing.</p>
                                 </div>
                             </div>
+
+                            <div>
+                                <div>
+                                    <div className='flex flex-row gap-x-[5px] items-center gap-y-[15px] mb-[10px]'>
+                                        <img src ={Globe} alt='icon' className='max-w-full'/>
+                                        <h3 className='text-[14px]'>Worldwide server locations</h3>
+                                    </div>
+                                    <p className='text-[#9e9e9e] text-[12px]'>Leverage Divhunt's global CDN for consistent, lightning-fast loading.</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <div className='flex flex-row gap-x-[5px] items-center gap-y-[15px] mb-[10px]'>
+                                        <img src ={Cache} alt='icon' className='max-w-full'/>
+                                        <h3 className='text-[14px]'>API Caching</h3>
+                                    </div>
+                                    <p className='text-[#9e9e9e] text-[12px]'>Boost site speed, reduce resource load & lower costs with API caching.</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <div className='flex flex-row gap-x-[5px] items-center gap-y-[15px] mb-[10px]'>
+                                        <img src ={Building} alt='icon' className='max-w-full'/>
+                                        <h3 className='text-[14px]'>Building performance</h3>
+                                    </div>
+                                    <p className='text-[#9e9e9e] text-[12px]'>Speed up website building with everything loading in a split second.</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
