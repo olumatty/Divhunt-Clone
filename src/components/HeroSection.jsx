@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import Arrow_Right from "../assets/arrow-right.svg";
 import Canvas from "../assets/canvas.svg";
 import Collaboration from "../assets/collaboration.svg";
@@ -16,6 +16,17 @@ import Repeater from "../assets/Repeater.svg";
 import Unlimited from "../assets/limit.svg";
 
 const HeroSection = () => {
+
+  const handleSmoothScroll = (event, sectionId) => {
+    if (window.innerWidth >= 1024) { // lg breakpoint (Tailwind: lg starts at 1024px)
+      event.preventDefault();
+      const targetSection = document.getElementById(sectionId);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  };
+  
   return (
     <section className="pb-[60px] lg:pb-[110px]">
       <div className="bg-gradient-to-t from-[#171717] to-[rgba(23,23,23,0)] pt-[100px] lg:pt-[225px] border-b border-[#242424] pb-[60px]">
