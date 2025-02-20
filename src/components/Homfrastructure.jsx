@@ -5,10 +5,16 @@ import Fast from "../assets/Fast.svg";
 import Globe from "../assets/globe.svg"
 import Cache from "../assets/cache.svg"
 import Building from "../assets/Building.svg"
+import FrastructureImage from "../assets/FrastructureImage.svg"
+import SPA from "../assets/Single.svg";
+import CDN from "../assets/CDN.svg"
+import Fludity from "../assets/Fludity.svg"
+import Website from "../assets/Speed.svg"
+import { motion } from "framer-motion";
 
 const Homfrastructure = () => {
   return (
-    <section className='pt-[40px] md:pt-[60px] md:pb-[80px] lg:pt-[150px] lg:pb-[250px]'>
+    <section className='pt-[40px] md:pt-[60px] md:pb-[80px] lg:pt-[140px] lg:pb-[240px]'>
         <div className='w-full max-w-[1400px] my-0 mx-auto px-[20px]'>
             <div className='gap-y-[60px] md:gap-y-[100px] flex-col flex lg:flex-row relative'>
                 <div className='max-w-full w-full flex gap-y-[100px] lg:max-w-[505px] flex-col'>
@@ -78,6 +84,38 @@ const Homfrastructure = () => {
 
                         </div>
                     </div>
+                </div>
+            </div>
+            {/* Right Hand*/}
+            <div className='t279 lg:top-[88.6%]  lg:right-[-11%]'>
+                <img src={FrastructureImage} alt='image' className='hidden lg:block border border-[#242424] rounded-[20px] max-w-full'/>
+                <div className='hidden lg:grid grid-cols-1 md:grid-cols-2 gap-[20px]'>
+                    
+                    <div className='t281'>
+                        <img src={SPA} className='mb-[24px] max-w-full' alt='icon'/>
+                        <p className='mb-[10px] text-[16px] leading-[1.2]'>Single Page Application </p>
+                        <p className='text-[#9e9e9e] text-[13px]'>SPA technology allows for fast websites, seamless navigation, and improved UX.</p>
+                    </div>
+
+                    <div className='t281'>
+                        <img src={CDN} className='mb-[24px] max-w-full' alt='icon'/>
+                        <p className='mb-[10px] text-[16px] leading-[1.2]'>Global CDN </p>
+                        <p className='text-[#9e9e9e] text-[13px]'>We store your entire website on a global CDN for consistent, high-speed site performance, regardless of audience location.</p>
+                    </div>
+
+                    <div className='t281'>
+                        <img src={Fludity} className='mb-[24px] max-w-full' alt='icon'/>
+                        <p className='mb-[10px] text-[16px] leading-[1.2]'>Fludity </p>
+                        <p className='text-[#9e9e9e] text-[13px]'>Instant loading and optimized RAM usage ensure smooth, lag-free performance websites on any device.</p>
+                    </div>
+
+                    <div className='t281'>
+                        <img src={Website} className='mb-[24px] max-w-full' alt='icon'/>
+                        <p className='mb-[10px] text-[16px] leading-[1.2]'>Website speed</p>
+                        <p className='text-[#9e9e9e] text-[13px]'>Optimized code and lazy-loading ensure fast website performance without costly back-end development.</p>
+                    </div>
+
+
                 </div>
             </div>
         </div>
