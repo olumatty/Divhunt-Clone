@@ -32,6 +32,20 @@ import Fetch from "../assets/Fetch.svg";
 import Live from "../assets/Live.svg";
 import Data from "../assets/Data.svg"
 import Native from "../assets/Native.svg"
+import Visual from "../assets/Visual.svg"
+import Visibility from "../assets/Visibility.svg";
+import CMS from "../assets/CMS.svg";
+import Code from "../assets/Code.svg";
+import Localbg from "../assets/Localbg.webp";
+import LocalImage from "../assets/LocalImage.webp";
+import CustomBg from "../assets/custombg.webp";
+import CustomImage from "../assets/customImage.webp"
+import Reusable from "../assets/Reusable.svg";
+import Files from "../assets/files.svg";
+import Embed from "../assets/Embed.svg";
+import Global from "../assets/Global.svg"
+
+
 
 const sections = [
   { id: "builder", label: "Builder" },
@@ -676,15 +690,13 @@ const HeroSection = () => {
                     <div className="">
                       <div>
                         <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
-                          <img src={Fields} alt="Icon" className="max-w-full" />
+                          <img src={Fetch} alt="Icon" className="max-w-full" />
                           <p className="text-[14px] whitespace-pre-wrap">
-                            Fields
+                          Fetch REST Data
                           </p>
                         </div>
                         <p className="text-[#9e9e9e] text-[14px] whitespace-break-spaces">
-                          Fit field types to content,
-                          <br />
-                          not the other way around.
+                        Pull real-time data from REST APIs for direct integration.
                         </p>
                       </div>
                     </div>
@@ -692,15 +704,13 @@ const HeroSection = () => {
                     <div className="">
                       <div>
                         <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
-                          <img src={Multi} alt="Icon" className="max-w-full" />
+                          <img src={Live} alt="Icon" className="max-w-full" />
                           <p className="text-[14px] whitespace-pre-wrap">
-                            Multi-relation field
+                          Live preview and edits
                           </p>
                         </div>
                         <p className="text-[#9e9e9e] text-[14px] ">
-                          {" "}
-                          Connect CMS collections and link your content with a
-                          few clicks.
+                        Edit and preview RESTful API data instantly before publishing.
                         </p>
                       </div>
                     </div>
@@ -709,18 +719,16 @@ const HeroSection = () => {
                       <div>
                         <div className="flex gap-y-[15px] mt-[30px] md:mt-0  items-start mb-[10px] flex-col">
                           <img
-                            src={Repeater}
+                            src={Data}
                             alt="Icon"
                             className="max-w-full"
                           />
                           <p className="text-[14px] whitespace-pre-wrap">
-                            Repeater
+                          Data to Builder Integration
                           </p>
                         </div>
                         <p className="text-[#9e9e9e] text-[14px]">
-                          {" "}
-                          Quickly replicate and customize content to eliminate
-                          repetitive tasks.
+                        Integrate REST data into designs and style it using visual tools.s.
                         </p>
                       </div>
                     </div>
@@ -729,18 +737,16 @@ const HeroSection = () => {
                       <div>
                         <div className="flex gap-y-[15px] mt-[30px] md:mt-0 items-start mb-[10px] flex-col">
                           <img
-                            src={Unlimited}
+                            src={Native}
                             alt="Icon"
                             className="max-w-full"
                           />
                           <p className="text-[14px] whitespace-pre-wrap">
-                            Unlimited fields
+                          Native Integrations
                           </p>
                         </div>
                         <p className="text-[#9e9e9e] text-[14px] ">
-                          {" "}
-                          Add hundreds of fields to CMS collections without
-                          hitting a limit.
+                        Connect REST APIs effortlessly with Divhunt's native integration options.
                         </p>
                       </div>
                     </div>
@@ -748,6 +754,245 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
+
+            <div id="localization" className="">
+              <h2 className="text-[36px] md:text-[42px] lg:text-[48px] mb-[30px] font-[400] leading-[1.2]">
+              Website localization
+              </h2>
+              <div className="Card-animation">
+                <div className="flex bg-[#242424] gap-y-[40px] md:gap-y-[60px] lg:gap-y-0 p-[20px] lg:p-[30px] rounded-[20px] lg:flex-row lg:gap-x-[70px] flex-col-reverse">
+                  <div className="w-full max-w-full lg:max-w-[500px] gap-y-[60px] flex flex-col  justify-between">
+                    <div className="">
+                      <div>
+                        <div className="max-w-full mb-[30px]">
+                          <h3 className="text-left text-[30px] md:text-[32px] mb-[8px] lg:mb-[20px] text-balance">
+                          Localize your website for free! (up to 15 languages)
+                          </h3>
+                          <p className="text-[14px] text-[#9e9e9e]">
+                          Reach global audiences with Divhunt's built-in tools for translating pages, CMS content, URLs, and metadata.
+                          </p>
+                        </div>
+                        <div className="flex gap-x-[15px] lg:mt-[20px] items-center">
+                          <div className="flex gap-x-[15px] items-center">
+                            <div className="flex gap-x-[10px] items-center cursor-pointer transition-all duration-200 ease-linear">
+                              <p>
+                              More on Website Localization
+                              </p>
+                              <img
+                                src={Arrow_Right}
+                                alt="arrow"
+                                className="max-w-full transition-all duration-200 ease-in-out cursor-pointer hover:translate-x-2"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="grid gap-x-[30px] mt-[60px] grid-cols-2">
+                        <div>
+                          <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
+                            <img
+                              src={Visual}
+                              alt="icon"
+                              className="max-w-full"
+                            />
+                            <p className="text-[14px] my-0">Visual localization</p>
+                          </div>
+                          <p className="text-[#9e9e9e] text-[12px]">
+                          Build multi-language pages & see all previews directly on the canvas.
+                          </p>
+                        </div>
+
+                        <div>
+                          <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
+                            <img
+                              src={Visibility}
+                              alt="icon"
+                              className="max-w-full"
+                            />
+                            <p className="text-[14px] my-0">Element visibility control</p>
+                          </div>
+                          <p className="text-[#9e9e9e] text-[12px]">
+                          Control element visibility and support website internationalization by language.
+                          </p>
+                        </div>
+
+                        <div>
+                          <div className="flex gap-y-[15px] mt-[30px] items-start mb-[10px] flex-col">
+                            <img
+                              src={CMS}
+                              alt="icon"
+                              className="max-w-full"
+                            />
+                            <p className="text-[14px] my-0">
+                            CMS localization
+                            </p>
+                          </div>
+                          <p className="text-[#9e9e9e] text-[12px]">
+                          Translate CMS content for accessibility in any language.
+                          </p>
+                        </div>
+
+                        <div>
+                          <div className="flex gap-y-[15px] mt-[30px] items-start mb-[10px] flex-col">
+                            <img
+                              src={Code}
+                              alt="icon"
+                              className="max-w-full"
+                            />
+                            <p className="text-[14px] my-0">Embed code by language</p>
+                          </div>
+                          <p className="text-[#9e9e9e] text-[12px] leading-[1.4]">
+                          Integrate and manage different embed codes for each language.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    className="overflow-hidden relative pt-[30px] pr-[30px] bg-cover bg-no-repeat rounded-[10px] md:rounded-[20px]"
+                    style={{ backgroundImage: `url(${Localbg})` }}
+                  >
+                    <img
+                      src={LocalImage}
+                      alt="image"
+                      className="rounded-tr-[10px] w-full max-w-full"
+                    />
+
+                    <div
+                      className="top[-1%] left-[1%] right-[-1%] bottom-[-1%] flex opacity-0 gap-y-[5px] absolute bg-[rgba(7, 7, 9, 0.1)] transition-all duration-400
+                                             ease-in-out translate-x-2 items-center mx-auto flex-col backdrop-blur-[50px] justify-center "
+                    >
+                      <div className="flex gap-y-[5px] flex-col">
+                        <a
+                          href="#"
+                          className="flex gap-x-[10px] items-center py-[17px] px-[20px] justify-center rounded-[100px] bg-[rgba(255, 255, 255, 0.15)] transition-all duration-250 ease-in-out"
+                        >
+                          <img src={playbutton} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="customfiles" className="">
+              <h2 className="text-[36px] md:text-[42px] lg:text-[48px] mb-[30px] font-[400] leading-[1.2]">
+              Custom files
+              </h2>
+              <div className="card-animation">
+                <div className="flex flex-col mb-[30px] bg-[#242424] p-[20px] md:p-[30px] rounded-[20px] relative overflow-hidden">
+                  {/* Main Content */}
+                  <div className="flex w-full flex-col md:flex-row justify-between items-center md:items-start gap-6">
+                    {/* Left Side: Heading */}
+                    <div className="w-full md:w-1/2 lg:w-[50%]">
+                      <h3 className="text-left text-[30px] md:text-[32px] mb-2 whitespace-pre-wrap">
+                      Keep your web <br/>projects organized
+                      </h3>
+                    </div>
+
+                    {/* Right Side: Paragraph */}
+                    <div className="w-full md:w-1/2 lg:w-[50%] max-w-[430px]">
+                      <p className="text-[16px] mb-[24px] text-[#9e9e9e] whitespace-pre-wrap">
+                      Enjoy an unlimited website builder that gives you options for <br/>customized, quick, and efficient development.
+                      </p>
+                      <div className="flex gap-x-[24px] items-center">
+                        <div className="flex gap-x-[10px] items-center cursor-pointer transition-all duration-200 ease-linear text-white">
+                          <p className="whitespace-pre-wrap">
+                          See all Custom files features
+                          </p>
+                          <img
+                            src={Right_Arrow}
+                            alt=""
+                            className="transition-all duration-200 ease-in-out hover:translate-x-2"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Background Image Section - Beneath Content */}
+                  <div
+                    className="mt-[20px] relative p-[10px] md:py-[20px] md:px-[25px] rounded-[10px] lg:rounded-[20px] overflow-hidden bg-cover bg-no-repeat"
+                    style={{
+                      backgroundImage: `url(${CustomBg})`,
+                    }}
+                  >
+                    <img src={CustomImage} alt="rounded-[10px] max-w-full" />
+                  </div>
+
+                  <div className="grid grid-cols-2 md:grid-cols-3 mt-[40px] lg:grid-cols-4 gap-x-[20px] md:gap-x-[56px] md:gap-y-[30px]">
+                    <div className="">
+                      <div>
+                        <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
+                          <img src={Reusable} alt="Icon" className="max-w-full" />
+                          <p className="text-[14px] whitespace-pre-wrap">
+                          Reusable code
+                          </p>
+                        </div>
+                        <p className="text-[#9e9e9e] text-[14px] whitespace-break-spaces">
+                        Write custom CSS and JS files and import them where you need them.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="">
+                      <div>
+                        <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
+                          <img src={Files} alt="Icon" className="max-w-full" />
+                          <p className="text-[14px] whitespace-pre-wrap">
+                          Custom files
+                          </p>
+                        </div>
+                        <p className="text-[#9e9e9e] text-[14px] ">
+                        Organize your JS & CSS files for smooth and productive workflows.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="">
+                      <div>
+                        <div className="flex gap-y-[15px] mt-[30px] md:mt-0  items-start mb-[10px] flex-col">
+                          <img
+                            src={Embed}
+                            alt="Icon"
+                            className="max-w-full"
+                          />
+                          <p className="text-[14px] whitespace-pre-wrap">
+                          Embed code
+                          </p>
+                        </div>
+                        <p className="text-[#9e9e9e] text-[14px]">
+                        Add unique code blocks anywhere - regardless of page and language.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="">
+                      <div>
+                        <div className="flex gap-y-[15px] mt-[30px] md:mt-0 items-start mb-[10px] flex-col">
+                          <img
+                            src={Global}
+                            alt="Icon"
+                            className="max-w-full"
+                          />
+                          <p className="text-[14px] whitespace-pre-wrap">
+                          Global code
+                          </p>
+                        </div>
+                        <p className="text-[#9e9e9e] text-[14px] ">
+                        Use custom code globally, ensuring it runs on all pages.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
