@@ -20,32 +20,31 @@ import Extras from "../assets/extras.svg";
 import Custom from "../assets/cPlugin.svg";
 import Income from "../assets/income.svg";
 import Service from "../assets/service.svg";
-import Seobg from "../assets/seobg.webp"
-import SeoImage from "../assets/SeoImage.webp"
+import Seobg from "../assets/seobg.webp";
+import SeoImage from "../assets/SeoImage.webp";
 import Semantics from "../assets/Semantics.svg";
 import Prerendering from "../assets/Prerendering.svg";
 import Crawling from "../assets/crawling.svg";
 import Dynamic from "../assets/dynamic.svg";
 import ApiBg from "../assets/Apibg.webp";
-import ApiImage from "../assets/ApiImage.webp"
+import ApiImage from "../assets/ApiImage.webp";
 import Fetch from "../assets/Fetch.svg";
 import Live from "../assets/Live.svg";
-import Data from "../assets/Data.svg"
-import Native from "../assets/Native.svg"
-import Visual from "../assets/Visual.svg"
+import Data from "../assets/Data.svg";
+import Native from "../assets/Native.svg";
+import Visual from "../assets/Visual.svg";
 import Visibility from "../assets/Visibility.svg";
 import CMS from "../assets/CMS.svg";
 import Code from "../assets/Code.svg";
 import Localbg from "../assets/Localbg.webp";
 import LocalImage from "../assets/LocalImage.webp";
 import CustomBg from "../assets/custombg.webp";
-import CustomImage from "../assets/customImage.webp"
+import CustomImage from "../assets/customImage.webp";
 import Reusable from "../assets/Reusable.svg";
 import Files from "../assets/files.svg";
 import Embed from "../assets/Embed.svg";
-import Global from "../assets/Global.svg"
-
-
+import Global from "../assets/Global.svg";
+import { motion } from "framer-motion";
 
 const sections = [
   { id: "builder", label: "Builder" },
@@ -147,10 +146,20 @@ const HeroSection = () => {
               <h2 className="text-[36px] md:text-[42px] lg:text-[48px] mb-[30px] font-[400] leading-[1.2]">
                 Visuals Builder
               </h2>
-              <div className="Card-animation">
-                <div className="flex bg-[#242424] gap-y-[40px] md:gap-y-[60px] lg:gap-y-0 p-[20px] lg:p-[30px] rounded-[20px] lg:flex-row lg:gap-x-[70px] flex-col-reverse">
-                  <div className="w-full max-w-full lg:max-w-[500px] gap-y-[60px] flex flex-col  justify-between">
-                    <div className="">
+              <motion.div
+                className="card-animation"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              >
+                <motion.div
+                  className="flex bg-[#242424] gap-y-[40px] md:gap-y-[60px] lg:gap-y-0 p-[20px] lg:p-[30px] rounded-[20px] lg:flex-row lg:gap-x-[70px] flex-col-reverse"
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                >
+                  <div className="w-full max-w-full lg:max-w-[500px] gap-y-[60px] flex flex-col justify-between">
+                    <div>
                       <div>
                         <div className="max-w-full mb-[30px]">
                           <h3 className="text-left text-[30px] md:text-[32px] mb-[8px] lg:mb-[20px] text-balance">
@@ -175,9 +184,16 @@ const HeroSection = () => {
                           </div>
                         </div>
                       </div>
-
                       <div className="grid gap-x-[30px] mt-[60px] grid-cols-2">
-                        <div>
+                        <motion.div
+                          initial={{ opacity: 0, y: 50 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{
+                            duration: 0.8,
+                            delay: 0.2,
+                            ease: "easeOut",
+                          }}
+                        >
                           <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
                             <img
                               src={Canvas}
@@ -190,9 +206,17 @@ const HeroSection = () => {
                             Navigate, zoom, and pin multiple pages on a freeform
                             canvas.
                           </p>
-                        </div>
+                        </motion.div>
 
-                        <div>
+                        <motion.div
+                          initial={{ opacity: 0, y: 50 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{
+                            duration: 0.8,
+                            delay: 0.4,
+                            ease: "easeOut",
+                          }}
+                        >
                           <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
                             <img
                               src={Collaboration}
@@ -205,9 +229,17 @@ const HeroSection = () => {
                             Develop and collaborate with your team in real-time
                             - all on one page.
                           </p>
-                        </div>
+                        </motion.div>
 
-                        <div>
+                        <motion.div
+                          initial={{ opacity: 0, y: 50 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{
+                            duration: 0.8,
+                            delay: 0.6,
+                            ease: "easeOut",
+                          }}
+                        >
                           <div className="flex gap-y-[15px] mt-[30px] items-start mb-[10px] flex-col">
                             <img
                               src={CustomBreak}
@@ -222,9 +254,17 @@ const HeroSection = () => {
                             Design with full control over responsive
                             breakpoints.
                           </p>
-                        </div>
+                        </motion.div>
 
-                        <div>
+                        <motion.div
+                          initial={{ opacity: 0, y: 50 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{
+                            duration: 0.8,
+                            delay: 0.8,
+                            ease: "easeOut",
+                          }}
+                        >
                           <div className="flex gap-y-[15px] mt-[30px] items-start mb-[10px] flex-col">
                             <img
                               src={Customcss}
@@ -237,24 +277,32 @@ const HeroSection = () => {
                             Advance styling with custom CSS, in-builder editing,
                             & state targeting.
                           </p>
-                        </div>
+                        </motion.div>
                       </div>
                     </div>
                   </div>
 
-                  <div
+                  <motion.div
                     className="overflow-hidden relative pt-[30px] pr-[30px] bg-cover bg-no-repeat rounded-[10px] md:rounded-[20px]"
                     style={{ backgroundImage: `url(${Greenbg})` }}
+                    initial={{ scale: 1.1, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
                   >
-                    <img
+                    <motion.img
                       src={Builder}
                       alt="image"
                       className="rounded-tr-[10px] w-full max-w-full"
+                      initial={{ x: -100, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
                     />
 
-                    <div
-                      className="top[-1%] left-[1%] right-[-1%] bottom-[-1%] flex opacity-0 gap-y-[5px] absolute bg-[rgba(7, 7, 9, 0.1)] transition-all duration-400
-                           ease-in-out translate-x-2 items-center mx-auto flex-col backdrop-blur-[50px] justify-center "
+                    <motion.div
+                      className="top[-1%] left-[1%] right-[-1%] bottom-[-1%] flex opacity-0 gap-y-[5px] absolute bg-[rgba(7, 7, 9, 0.1)] transition-all duration-400 ease-in-out translate-x-2 items-center mx-auto flex-col backdrop-blur-[50px] justify-center"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 1, ease: "easeOut" }}
                     >
                       <div className="flex gap-y-[5px] flex-col">
                         <a
@@ -264,18 +312,28 @@ const HeroSection = () => {
                           <img src={playbutton} alt="" />
                         </a>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                    </motion.div>
+                  </motion.div>
+                </motion.div>
+              </motion.div>
             </div>
 
             <div id="cms" className="">
               <h2 className="text-[36px] md:text-[42px] lg:text-[48px] mb-[30px] font-[400] leading-[1.2]">
                 Composable CMS
               </h2>
-              <div className="card-animation">
-                <div className="flex flex-col mb-[30px] bg-[#242424] p-[20px] md:p-[30px] rounded-[20px] relative overflow-hidden">
+              <motion.div
+                className="card-animation"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              >
+                <motion.div
+                  className="flex flex-col mb-[30px] bg-[#242424] p-[20px] md:p-[30px] rounded-[20px] relative overflow-hidden"
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                >
                   {/* Main Content */}
                   <div className="flex w-full flex-col md:flex-row justify-between items-center md:items-start gap-6">
                     {/* Left Side: Heading */}
@@ -307,17 +365,34 @@ const HeroSection = () => {
                   </div>
 
                   {/* Background Image Section - Beneath Content */}
-                  <div
+                  <motion.div
                     className="mt-[20px] relative p-[10px] md:py-[20px] md:px-[25px] rounded-[10px] lg:rounded-[20px] overflow-hidden bg-cover bg-no-repeat"
-                    style={{
-                      backgroundImage: `url(${Coloredbg})`,
-                    }}
+                    style={{ backgroundImage: `url(${Coloredbg})` }}
+                    initial={{ scale: 1.1, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
                   >
-                    <img src={Composebg} alt="rounded-[10px] max-w-full" />
-                  </div>
+                    <motion.img
+                      src={Composebg}
+                      alt="rounded-[10px] max-w-full"
+                      className="rounded-[10px] max-w-full"
+                      initial={{ x: -100, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+                    />
+                  </motion.div>
 
                   <div className="grid grid-cols-2 md:grid-cols-3 mt-[40px] lg:grid-cols-4 gap-x-[20px] md:gap-x-[56px] md:gap-y-[30px]">
-                    <div className="">
+                    <motion.div
+                      className=""
+                      initial={{ opacity: 0, y: 50 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{
+                        duration: 0.8,
+                        ease: "easeOut",
+                        delay: 0.2,
+                      }}
+                    >
                       <div>
                         <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
                           <img src={Fields} alt="Icon" className="max-w-full" />
@@ -326,14 +401,22 @@ const HeroSection = () => {
                           </p>
                         </div>
                         <p className="text-[#9e9e9e] text-[14px] whitespace-break-spaces">
-                          Fit field types to content,
-                          <br />
-                          not the other way around.
+                          Fit field types to content, <br /> not the other way
+                          around.
                         </p>
                       </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="">
+                    <motion.div
+                      className=""
+                      initial={{ opacity: 0, y: 50 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{
+                        duration: 0.8,
+                        ease: "easeOut",
+                        delay: 0.3,
+                      }}
+                    >
                       <div>
                         <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
                           <img src={Multi} alt="Icon" className="max-w-full" />
@@ -342,16 +425,24 @@ const HeroSection = () => {
                           </p>
                         </div>
                         <p className="text-[#9e9e9e] text-[14px] ">
-                          {" "}
                           Connect CMS collections and link your content with a
                           few clicks.
                         </p>
                       </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="">
+                    <motion.div
+                      className=""
+                      initial={{ opacity: 0, y: 50 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{
+                        duration: 0.8,
+                        ease: "easeOut",
+                        delay: 0.4,
+                      }}
+                    >
                       <div>
-                        <div className="flex gap-y-[15px] mt-[30px] md:mt-0  items-start mb-[10px] flex-col">
+                        <div className="flex gap-y-[15px] mt-[30px] md:mt-0 items-start mb-[10px] flex-col">
                           <img
                             src={Repeater}
                             alt="Icon"
@@ -362,14 +453,22 @@ const HeroSection = () => {
                           </p>
                         </div>
                         <p className="text-[#9e9e9e] text-[14px]">
-                          {" "}
                           Quickly replicate and customize content to eliminate
                           repetitive tasks.
                         </p>
                       </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="">
+                    <motion.div
+                      className=""
+                      initial={{ opacity: 0, y: 50 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{
+                        duration: 0.8,
+                        ease: "easeOut",
+                        delay: 0.5,
+                      }}
+                    >
                       <div>
                         <div className="flex gap-y-[15px] mt-[30px] md:mt-0 items-start mb-[10px] flex-col">
                           <img
@@ -382,146 +481,209 @@ const HeroSection = () => {
                           </p>
                         </div>
                         <p className="text-[#9e9e9e] text-[14px] ">
-                          {" "}
                           Add hundreds of fields to CMS collections without
                           hitting a limit.
                         </p>
                       </div>
-                    </div>
+                    </motion.div>
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             </div>
 
             <div id="plugins" className="">
               <h2 className="text-[36px] md:text-[42px] lg:text-[48px] mb-[30px] font-[400] leading-[1.2]">
                 Community Plugins
               </h2>
-              <div className="card-animation">
-                <div className="flex bg-[#242424] gap-y-[40px] md:gap-y-[60px] lg:gap-y-0 p-[20px] lg:p-[30px] rounded-[20px] lg:flex-row lg:gap-x-[70px] flex-col-reverse">
-                  <div
+              <motion.div
+                className="card-animation"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              >
+                <motion.div
+                  className="flex bg-[#242424] gap-y-[40px] md:gap-y-[60px] lg:gap-y-0 p-[20px] lg:p-[30px] rounded-[20px] lg:flex-row lg:gap-x-[70px] flex-col-reverse"
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                >
+                  <motion.div
                     className="overflow-hidden relative pt-[20px] pr-[20px] rounded-[10px] md:pt-[30px] md:pr-[30px] md:rounded-[20px] bg-cover bg-no-repeat"
                     style={{ backgroundImage: `url(${Pluginbg})` }}
+                    initial={{ scale: 1.1, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
                   >
-                    <img
+                    <motion.img
                       src={PluginImage}
                       alt="image"
                       className="border-tr-[10px] w-full max-w-full"
+                      initial={{ x: -100, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
                     />
-                  </div>
-                  <div className="w-full max-w-full lg:max-w-[500px] gap-y-[60px] flex flex-col  justify-between">
-                    <div className="w-full max-w-[430px]">
+                  </motion.div>
+                  <div className="w-full max-w-full lg:max-w-[500px] gap-y-[60px] flex flex-col justify-between">
+                    <motion.div
+                      className="w-full max-w-[430px]"
+                      initial={{ opacity: 0, y: 50 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{
+                        duration: 0.8,
+                        delay: 0.2,
+                        ease: "easeOut",
+                      }}
+                    >
                       <div className="component">
-                        <div className="">
-                          <div className="mb-[30px] w-full">
-                            <h3 className="text-left text-[30px] md:text-[32px] mb-2 text-balance mt-0">
-                              Unlock new features with community-made plugins
+                        <div className="mb-[30px] w-full">
+                          <h3 className="text-left text-[30px] md:text-[32px] mb-2 text-balance mt-0">
+                            Unlock new features with community-made plugins
+                          </h3>
+                          <p className="text-[14px] text-[#9e9e9e]">
+                            Transform your design vision into fully functional
+                            websites using the full power of HTML, CSS and JS,
+                            without writing it.
+                          </p>
+                        </div>
+                        <div className="flex gap-x-[px] items-center">
+                          <div className="flex gap-x-[15px] items-center">
+                            <div className="flex gap-x-[10px] items-center cursor-pointer transition-all duration-200 ease-linear">
+                              <p>Learn more about Plugins</p>
+                              <motion.img
+                                src={Right_Arrow}
+                                alt=""
+                                className="transition-all duration-200 ease-in-out hover:translate-x-2"
+                                initial={{ opacity: 0, x: -20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{
+                                  duration: 0.8,
+                                  delay: 0.4,
+                                  ease: "easeOut",
+                                }}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="grid mt-[30px] grid-cols-2 gap-x-[20px] md:gap-x-[80px] md:gap-y-[30px]">
+                        <motion.div
+                          initial={{ opacity: 0, y: 50 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{
+                            duration: 0.8,
+                            delay: 0.2,
+                            ease: "easeOut",
+                          }}
+                        >
+                          <div className="flex gap-y-[20px] items-start mb-[10px] flex-col">
+                            <img
+                              src={Extras}
+                              alt="icon"
+                              className="max-w-full"
+                            />
+                            <h3 className="text-[14px] ">Free extras</h3>
+                          </div>
+                          <p className="text-[#9e9e9e] text-[12px]">
+                            Add extra functionalities to your <br />
+                            website with free plugins
+                          </p>
+                        </motion.div>
+
+                        <motion.div
+                          initial={{ opacity: 0, y: 50 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{
+                            duration: 0.8,
+                            delay: 0.4,
+                            ease: "easeOut",
+                          }}
+                        >
+                          <div className="flex gap-y-[20px] items-start mb-[10px] flex-col">
+                            <img
+                              src={Custom}
+                              alt="icon"
+                              className="max-w-full"
+                            />
+                            <h3 className="text-[14px] ">Custom plugins</h3>
+                          </div>
+                          <p className="text-[#9e9e9e] text-[12px] ">
+                            Create custom plugins in Divhunt to <br />
+                            add unique functions to any page.
+                          </p>
+                        </motion.div>
+
+                        <motion.div
+                          initial={{ opacity: 0, y: 50 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{
+                            duration: 0.8,
+                            delay: 0.6,
+                            ease: "easeOut",
+                          }}
+                        >
+                          <div className="flex gap-y-[20px] mt-[30px] md:mt-0 items-start mb-[10px] flex-col">
+                            <img
+                              src={Income}
+                              alt="icon"
+                              className="max-w-full"
+                            />
+                            <h3 className="text-[14px] ">Passive income</h3>
+                          </div>
+                          <p className="text-[#9e9e9e] text-[12px]">
+                            Monetize your skills by selling your <br />
+                            plugins in Divhunt’s Marketplace.
+                          </p>
+                        </motion.div>
+
+                        <motion.div
+                          initial={{ opacity: 0, y: 50 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{
+                            duration: 0.8,
+                            delay: 0.8,
+                            ease: "easeOut",
+                          }}
+                        >
+                          <div className="flex gap-y-[20px] mt-[30px] md:mt-0 items-start mb-[10px] flex-col">
+                            <img
+                              src={Service}
+                              alt="icon"
+                              className="max-w-full"
+                            />
+                            <h3 className="text-[14px] ">
+                              Service integrations
                             </h3>
-                            <p className="text-[14px] text-[#9e9e9e]">
-                              Transform your design vision into fully functional
-                              websites using the full power of HTML, CSS and JS,
-                              without writing it.
-                            </p>
                           </div>
-                          <div className="flex gap-x-[px] items-center">
-                            <div className="flex gap-x-[15px] items-center">
-                              <div className="flex gap-x-[10px] items-center cursor-pointer transition-all duration-200 ease-linear">
-                                <p>Learn more about Plugins</p>
-                                <img
-                                  src={Right_Arrow}
-                                  alt=""
-                                  className="transition-all duration-200 ease-in-out hover:translate-x-2"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                          <p className="text-[#9e9e9e] text-[12px]">
+                            Offer Divhunt integrations to expand your service
+                            reach.
+                          </p>
+                        </motion.div>
                       </div>
-                      <div className="grid mt-[30px] grid-cols-2 gap-x-[20px] md:gap-x-[80px] md:gap-y-[30px] ">
-                        <div>
-                          <div>
-                            <div className="flex gap-y-[20px] items-start mb-[10px] flex-col">
-                              <img
-                                src={Extras}
-                                alt="icon"
-                                className="max-w-full"
-                              />
-                              <h3 className="text-[14px] ">Free extras</h3>
-                            </div>
-                            <p className="text-[#9e9e9e] text-[12px]">
-                              Add extra functionalities to your <br />
-                              website with free plugins
-                            </p>
-                          </div>
-                        </div>
-
-                        <div>
-                          <div>
-                            <div className="flex gap-y-[20px] items-start mb-[10px] flex-col">
-                              <img
-                                src={Custom}
-                                alt="icon"
-                                className="max-w-full"
-                              />
-                              <h3 className="text-[14px] ">Custom plugins</h3>
-                            </div>
-                            <p className="text-[#9e9e9e] text-[12px] ">
-                              Create custom plugins in Divhunt to <br />
-                              add unique functions to any page.
-                            </p>
-                          </div>
-                        </div>
-
-                        <div>
-                          <div>
-                            <div className="flex gap-y-[20px] mt-[30px] md:mt-0 items-start mb-[10px] flex-col">
-                              <img
-                                src={Income}
-                                alt="icon"
-                                className="max-w-full"
-                              />
-                              <h3 className="text-[14px] ">Passive income</h3>
-                            </div>
-                            <p className="text-[#9e9e9e] text-[12px]">
-                              Monetize your skills by selling your <br />
-                              plugins in Divhunt’s Marketplace.
-                            </p>
-                          </div>
-                        </div>
-
-                        <div>
-                          <div>
-                            <div className="flex gap-y-[20px] mt-[30px] md:mt-0 items-start mb-[10px] flex-col">
-                              <img
-                                src={Service}
-                                alt="icon"
-                                className="max-w-full"
-                              />
-                              <h3 className="text-[14px] ">
-                                Service integrations
-                              </h3>
-                            </div>
-                            <p className="text-[#9e9e9e] text-[12px]">
-                              Offer Divhunt integrations to expand your service
-                              reach.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    </motion.div>
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             </div>
 
             <div id="seo" className="">
               <h2 className="text-[36px] md:text-[42px] lg:text-[48px] mb-[30px] font-[400] leading-[1.2]">
                 SEO-ready builder
               </h2>
-              <div className="Card-animation">
-                <div className="flex bg-[#242424] gap-y-[40px] md:gap-y-[60px] lg:gap-y-0 p-[20px] lg:p-[30px] rounded-[20px] lg:flex-row lg:gap-x-[70px] flex-col-reverse">
-                  <div className="w-full max-w-full lg:max-w-[500px] gap-y-[60px] flex flex-col  justify-between">
-                    <div className="">
+              <motion.div
+                className="Card-animation"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              >
+                <motion.div
+                  className="flex bg-[#242424] gap-y-[40px] md:gap-y-[60px] lg:gap-y-0 p-[20px] lg:p-[30px] rounded-[20px] lg:flex-row lg:gap-x-[70px] flex-col-reverse"
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                >
+                  <div className="w-full max-w-full lg:max-w-[500px] gap-y-[60px] flex flex-col justify-between">
+                    <div>
                       <div>
                         <div className="max-w-full mb-[30px]">
                           <h3 className="text-left text-[30px] md:text-[32px] mb-[8px] lg:mb-[20px] text-balance">
@@ -551,7 +713,15 @@ const HeroSection = () => {
                       </div>
 
                       <div className="grid gap-x-[30px] mt-[60px] grid-cols-2">
-                        <div>
+                        <motion.div
+                          initial={{ opacity: 0, y: 50 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{
+                            duration: 0.8,
+                            delay: 0.2,
+                            ease: "easeOut",
+                          }}
+                        >
                           <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
                             <img
                               src={Semantics}
@@ -564,9 +734,17 @@ const HeroSection = () => {
                             Navigate, zoom, and pin multiple pages on a freeform
                             canvas.
                           </p>
-                        </div>
+                        </motion.div>
 
-                        <div>
+                        <motion.div
+                          initial={{ opacity: 0, y: 50 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{
+                            duration: 0.8,
+                            delay: 0.4,
+                            ease: "easeOut",
+                          }}
+                        >
                           <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
                             <img
                               src={Prerendering}
@@ -576,11 +754,20 @@ const HeroSection = () => {
                             <p className="text-[14px] my-0">Prerendering</p>
                           </div>
                           <p className="text-[#9e9e9e] text-[12px]">
-                          Ensure crawlability with automated HTML prerendering.
+                            Ensure crawlability with automated HTML
+                            prerendering.
                           </p>
-                        </div>
+                        </motion.div>
 
-                        <div>
+                        <motion.div
+                          initial={{ opacity: 0, y: 50 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{
+                            duration: 0.8,
+                            delay: 0.6,
+                            ease: "easeOut",
+                          }}
+                        >
                           <div className="flex gap-y-[15px] mt-[30px] items-start mb-[10px] flex-col">
                             <img
                               src={Crawling}
@@ -588,15 +775,24 @@ const HeroSection = () => {
                               className="max-w-full"
                             />
                             <p className="text-[14px] my-0">
-                            Low crawling budget
+                              Low crawling budget
                             </p>
                           </div>
                           <p className="text-[#9e9e9e] text-[12px]">
-                          Leverage global CDN for low crawl budgets and full indexing.
+                            Leverage global CDN for low crawl budgets and full
+                            indexing.
                           </p>
-                        </div>
+                        </motion.div>
 
-                        <div>
+                        <motion.div
+                          initial={{ opacity: 0, y: 50 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{
+                            duration: 0.8,
+                            delay: 0.8,
+                            ease: "easeOut",
+                          }}
+                        >
                           <div className="flex gap-y-[15px] mt-[30px] items-start mb-[10px] flex-col">
                             <img
                               src={Dynamic}
@@ -606,26 +802,34 @@ const HeroSection = () => {
                             <p className="text-[14px] my-0">Dynamic SEO</p>
                           </div>
                           <p className="text-[#9e9e9e] text-[12px] leading-[1.4]">
-                          Let CMS fields manage SEO for dynamic content.
+                            Let CMS fields manage SEO for dynamic content.
                           </p>
-                        </div>
+                        </motion.div>
                       </div>
                     </div>
                   </div>
 
-                  <div
+                  <motion.div
                     className="overflow-hidden relative pt-[30px] pr-[30px] bg-cover bg-no-repeat rounded-[10px] md:rounded-[20px]"
                     style={{ backgroundImage: `url(${Seobg})` }}
+                    initial={{ scale: 1.1, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
                   >
-                    <img
+                    <motion.img
                       src={SeoImage}
                       alt="image"
                       className="rounded-tr-[10px] w-full max-w-full"
+                      initial={{ x: -100, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
                     />
 
-                    <div
-                      className="top[-1%] left-[1%] right-[-1%] bottom-[-1%] flex opacity-0 gap-y-[5px] absolute bg-[rgba(7, 7, 9, 0.1)] transition-all duration-400
-                                             ease-in-out translate-x-2 items-center mx-auto flex-col backdrop-blur-[50px] justify-center "
+                    <motion.div
+                      className="top[-1%] left-[1%] right-[-1%] bottom-[-1%] flex opacity-0 gap-y-[5px] absolute bg-[rgba(7, 7, 9, 0.1)] transition-all duration-400 ease-in-out translate-x-2 items-center mx-auto flex-col backdrop-blur-[50px] justify-center"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 1, ease: "easeOut" }}
                     >
                       <div className="flex gap-y-[5px] flex-col">
                         <a
@@ -635,364 +839,379 @@ const HeroSection = () => {
                           <img src={playbutton} alt="" />
                         </a>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                    </motion.div>
+                  </motion.div>
+                </motion.div>
+              </motion.div>
             </div>
 
             <div id="restapi" className="">
               <h2 className="text-[36px] md:text-[42px] lg:text-[48px] mb-[30px] font-[400] leading-[1.2]">
-              REST API Integrations
+                REST API Integrations
               </h2>
-              <div className="card-animation">
-                <div className="flex flex-col mb-[30px] bg-[#242424] p-[20px] md:p-[30px] rounded-[20px] relative overflow-hidden">
-                  {/* Main Content */}
-                  <div className="flex w-full flex-col md:flex-row justify-between items-center md:items-start gap-6">
-                    {/* Left Side: Heading */}
-                    <div className="w-full md:w-1/2 lg:w-[50%]">
-                      <h3 className="text-left text-[30px] md:text-[32px] mb-2 whitespace-pre-wrap">
-                      Connect and customize <br/>REST APIs in minutes
-                      </h3>
-                    </div>
+              <motion.div
+                className="flex flex-col mb-[30px] bg-[#242424] p-[20px] md:p-[30px] rounded-[20px] relative overflow-hidden"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              >
+                {/* Main Content */}
+                <div className="flex w-full flex-col md:flex-row justify-between items-center md:items-start gap-6">
+                  {/* Left Side: Heading */}
+                  <div className="w-full md:w-1/2 lg:w-[50%]">
+                    <h3 className="text-left text-[30px] md:text-[32px] mb-2 whitespace-pre-wrap">
+                      Connect and customize <br />
+                      REST APIs in minutes
+                    </h3>
+                  </div>
 
-                    {/* Right Side: Paragraph */}
-                    <div className="w-full md:w-1/2 lg:w-[50%] max-w-[430px]">
-                      <p className="text-[16px] mb-[24px] text-[#9e9e9e] whitespace-pre-wrap">
-                      Easily link to any REST API endpoint with instant preview & expand your site’s functionality smoother than ever before.
-                      </p>
-                      <div className="flex gap-x-[24px] items-center">
-                        <div className="flex gap-x-[10px] items-center cursor-pointer transition-all duration-200 ease-linear text-white">
-                          <p className="whitespace-pre-wrap">
+                  {/* Right Side: Paragraph */}
+                  <div className="w-full md:w-1/2 lg:w-[50%] max-w-[430px]">
+                    <p className="text-[16px] mb-[24px] text-[#9e9e9e] whitespace-pre-wrap">
+                      Easily link to any REST API endpoint with instant preview
+                      & expand your site’s functionality smoother than ever
+                      before.
+                    </p>
+                    <div className="flex gap-x-[24px] items-center">
+                      <div className="flex gap-x-[10px] items-center cursor-pointer transition-all duration-200 ease-linear text-white">
+                        <p className="whitespace-pre-wrap">
                           See all REST API features
-                          </p>
-                          <img
-                            src={Right_Arrow}
-                            alt=""
-                            className="transition-all duration-200 ease-in-out hover:translate-x-2"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Background Image Section - Beneath Content */}
-                  <div
-                    className="mt-[20px] relative p-[10px] md:py-[20px] md:px-[25px] rounded-[10px] lg:rounded-[20px] overflow-hidden bg-cover bg-no-repeat"
-                    style={{
-                      backgroundImage: `url(${ApiBg})`,
-                    }}
-                  >
-                    <img src={ApiImage} alt="rounded-[10px] max-w-full" />
-                  </div>
-
-                  <div className="grid grid-cols-2 md:grid-cols-3 mt-[40px] lg:grid-cols-4 gap-x-[20px] md:gap-x-[56px] md:gap-y-[30px]">
-                    <div className="">
-                      <div>
-                        <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
-                          <img src={Fetch} alt="Icon" className="max-w-full" />
-                          <p className="text-[14px] whitespace-pre-wrap">
-                          Fetch REST Data
-                          </p>
-                        </div>
-                        <p className="text-[#9e9e9e] text-[14px] whitespace-break-spaces">
-                        Pull real-time data from REST APIs for direct integration.
                         </p>
-                      </div>
-                    </div>
-
-                    <div className="">
-                      <div>
-                        <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
-                          <img src={Live} alt="Icon" className="max-w-full" />
-                          <p className="text-[14px] whitespace-pre-wrap">
-                          Live preview and edits
-                          </p>
-                        </div>
-                        <p className="text-[#9e9e9e] text-[14px] ">
-                        Edit and preview RESTful API data instantly before publishing.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="">
-                      <div>
-                        <div className="flex gap-y-[15px] mt-[30px] md:mt-0  items-start mb-[10px] flex-col">
-                          <img
-                            src={Data}
-                            alt="Icon"
-                            className="max-w-full"
-                          />
-                          <p className="text-[14px] whitespace-pre-wrap">
-                          Data to Builder Integration
-                          </p>
-                        </div>
-                        <p className="text-[#9e9e9e] text-[14px]">
-                        Integrate REST data into designs and style it using visual tools.s.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="">
-                      <div>
-                        <div className="flex gap-y-[15px] mt-[30px] md:mt-0 items-start mb-[10px] flex-col">
-                          <img
-                            src={Native}
-                            alt="Icon"
-                            className="max-w-full"
-                          />
-                          <p className="text-[14px] whitespace-pre-wrap">
-                          Native Integrations
-                          </p>
-                        </div>
-                        <p className="text-[#9e9e9e] text-[14px] ">
-                        Connect REST APIs effortlessly with Divhunt's native integration options.
-                        </p>
+                        <img
+                          src={Right_Arrow}
+                          alt=""
+                          className="transition-all duration-200 ease-in-out hover:translate-x-2"
+                        />
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+
+                {/* Background Image Section - Beneath Content */}
+                <motion.div
+                  className="mt-[20px] relative p-[10px] md:py-[20px] md:px-[25px] rounded-[10px] lg:rounded-[20px] overflow-hidden bg-cover bg-no-repeat"
+                  style={{ backgroundImage: `url(${ApiBg})` }}
+                  initial={{ scale: 1.1, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                >
+                  {/* Image Animation */}
+                  <motion.img
+                    src={ApiImage}
+                    alt=""
+                    className="rounded-[10px] max-w-full"
+                    initial={{ x: -100, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+                  />
+                </motion.div>
+
+                <div className="grid grid-cols-2 md:grid-cols-3 mt-[40px] lg:grid-cols-4 gap-x-[20px] md:gap-x-[56px] md:gap-y-[30px]">
+                  <div>
+                    <div>
+                      <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
+                        <img src={Fetch} alt="Icon" className="max-w-full" />
+                        <p className="text-[14px] whitespace-pre-wrap">
+                          Fetch REST Data
+                        </p>
+                      </div>
+                      <p className="text-[#9e9e9e] text-[14px] whitespace-break-spaces">
+                        Pull real-time data from REST APIs for direct
+                        integration.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div>
+                      <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
+                        <img src={Live} alt="Icon" className="max-w-full" />
+                        <p className="text-[14px] whitespace-pre-wrap">
+                          Live preview and edits
+                        </p>
+                      </div>
+                      <p className="text-[#9e9e9e] text-[14px]">
+                        Edit and preview RESTful API data instantly before
+                        publishing.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div>
+                      <div className="flex gap-y-[15px] mt-[30px] md:mt-0 items-start mb-[10px] flex-col">
+                        <img src={Data} alt="Icon" className="max-w-full" />
+                        <p className="text-[14px] whitespace-pre-wrap">
+                          Data to Builder Integration
+                        </p>
+                      </div>
+                      <p className="text-[#9e9e9e] text-[14px]">
+                        Integrate REST data into designs and style it using
+                        visual tools.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div>
+                      <div className="flex gap-y-[15px] mt-[30px] md:mt-0 items-start mb-[10px] flex-col">
+                        <img src={Native} alt="Icon" className="max-w-full" />
+                        <p className="text-[14px] whitespace-pre-wrap">
+                          Native Integrations
+                        </p>
+                      </div>
+                      <p className="text-[#9e9e9e] text-[14px]">
+                        Connect REST APIs effortlessly with Divhunt's native
+                        integration options.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
             </div>
 
             <div id="localization" className="">
               <h2 className="text-[36px] md:text-[42px] lg:text-[48px] mb-[30px] font-[400] leading-[1.2]">
-              Website localization
+                Website localization
               </h2>
-              <div className="Card-animation">
-                <div className="flex bg-[#242424] gap-y-[40px] md:gap-y-[60px] lg:gap-y-0 p-[20px] lg:p-[30px] rounded-[20px] lg:flex-row lg:gap-x-[70px] flex-col-reverse">
-                  <div className="w-full max-w-full lg:max-w-[500px] gap-y-[60px] flex flex-col  justify-between">
-                    <div className="">
-                      <div>
-                        <div className="max-w-full mb-[30px]">
-                          <h3 className="text-left text-[30px] md:text-[32px] mb-[8px] lg:mb-[20px] text-balance">
+
+              <motion.div
+                className="flex bg-[#242424] gap-y-[40px] md:gap-y-[60px] lg:gap-y-0 p-[20px] lg:p-[30px] rounded-[20px] lg:flex-row lg:gap-x-[70px] flex-col-reverse"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              >
+                <div className="w-full max-w-full lg:max-w-[500px] gap-y-[60px] flex flex-col  justify-between">
+                  <div className="">
+                    <div>
+                      <div className="max-w-full mb-[30px]">
+                        <h3 className="text-left text-[30px] md:text-[32px] mb-[8px] lg:mb-[20px] text-balance">
                           Localize your website for free! (up to 15 languages)
-                          </h3>
-                          <p className="text-[14px] text-[#9e9e9e]">
-                          Reach global audiences with Divhunt's built-in tools for translating pages, CMS content, URLs, and metadata.
-                          </p>
-                        </div>
-                        <div className="flex gap-x-[15px] lg:mt-[20px] items-center">
-                          <div className="flex gap-x-[15px] items-center">
-                            <div className="flex gap-x-[10px] items-center cursor-pointer transition-all duration-200 ease-linear">
-                              <p>
-                              More on Website Localization
-                              </p>
-                              <img
-                                src={Arrow_Right}
-                                alt="arrow"
-                                className="max-w-full transition-all duration-200 ease-in-out cursor-pointer hover:translate-x-2"
-                              />
-                            </div>
-                          </div>
-                        </div>
+                        </h3>
+                        <p className="text-[14px] text-[#9e9e9e]">
+                          Reach global audiences with Divhunt's built-in tools
+                          for translating pages, CMS content, URLs, and
+                          metadata.
+                        </p>
                       </div>
-
-                      <div className="grid gap-x-[30px] mt-[60px] grid-cols-2">
-                        <div>
-                          <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
+                      <div className="flex gap-x-[15px] lg:mt-[20px] items-center">
+                        <div className="flex gap-x-[15px] items-center">
+                          <div className="flex gap-x-[10px] items-center cursor-pointer transition-all duration-200 ease-linear">
+                            <p>More on Website Localization</p>
                             <img
-                              src={Visual}
-                              alt="icon"
-                              className="max-w-full"
+                              src={Arrow_Right}
+                              alt="arrow"
+                              className="max-w-full transition-all duration-200 ease-in-out cursor-pointer hover:translate-x-2"
                             />
-                            <p className="text-[14px] my-0">Visual localization</p>
                           </div>
-                          <p className="text-[#9e9e9e] text-[12px]">
-                          Build multi-language pages & see all previews directly on the canvas.
-                          </p>
-                        </div>
-
-                        <div>
-                          <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
-                            <img
-                              src={Visibility}
-                              alt="icon"
-                              className="max-w-full"
-                            />
-                            <p className="text-[14px] my-0">Element visibility control</p>
-                          </div>
-                          <p className="text-[#9e9e9e] text-[12px]">
-                          Control element visibility and support website internationalization by language.
-                          </p>
-                        </div>
-
-                        <div>
-                          <div className="flex gap-y-[15px] mt-[30px] items-start mb-[10px] flex-col">
-                            <img
-                              src={CMS}
-                              alt="icon"
-                              className="max-w-full"
-                            />
-                            <p className="text-[14px] my-0">
-                            CMS localization
-                            </p>
-                          </div>
-                          <p className="text-[#9e9e9e] text-[12px]">
-                          Translate CMS content for accessibility in any language.
-                          </p>
-                        </div>
-
-                        <div>
-                          <div className="flex gap-y-[15px] mt-[30px] items-start mb-[10px] flex-col">
-                            <img
-                              src={Code}
-                              alt="icon"
-                              className="max-w-full"
-                            />
-                            <p className="text-[14px] my-0">Embed code by language</p>
-                          </div>
-                          <p className="text-[#9e9e9e] text-[12px] leading-[1.4]">
-                          Integrate and manage different embed codes for each language.
-                          </p>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div
-                    className="overflow-hidden relative pt-[30px] pr-[30px] bg-cover bg-no-repeat rounded-[10px] md:rounded-[20px]"
-                    style={{ backgroundImage: `url(${Localbg})` }}
-                  >
-                    <img
-                      src={LocalImage}
-                      alt="image"
-                      className="rounded-tr-[10px] w-full max-w-full"
-                    />
+                    <div className="grid gap-x-[30px] mt-[60px] grid-cols-2">
+                      <div>
+                        <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
+                          <img src={Visual} alt="icon" className="max-w-full" />
+                          <p className="text-[14px] my-0">
+                            Visual localization
+                          </p>
+                        </div>
+                        <p className="text-[#9e9e9e] text-[12px]">
+                          Build multi-language pages & see all previews directly
+                          on the canvas.
+                        </p>
+                      </div>
 
-                    <div
-                      className="top[-1%] left-[1%] right-[-1%] bottom-[-1%] flex opacity-0 gap-y-[5px] absolute bg-[rgba(7, 7, 9, 0.1)] transition-all duration-400
-                                             ease-in-out translate-x-2 items-center mx-auto flex-col backdrop-blur-[50px] justify-center "
-                    >
-                      <div className="flex gap-y-[5px] flex-col">
-                        <a
-                          href="#"
-                          className="flex gap-x-[10px] items-center py-[17px] px-[20px] justify-center rounded-[100px] bg-[rgba(255, 255, 255, 0.15)] transition-all duration-250 ease-in-out"
-                        >
-                          <img src={playbutton} alt="" />
-                        </a>
+                      <div>
+                        <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
+                          <img
+                            src={Visibility}
+                            alt="icon"
+                            className="max-w-full"
+                          />
+                          <p className="text-[14px] my-0">
+                            Element visibility control
+                          </p>
+                        </div>
+                        <p className="text-[#9e9e9e] text-[12px]">
+                          Control element visibility and support website
+                          internationalization by language.
+                        </p>
+                      </div>
+
+                      <div>
+                        <div className="flex gap-y-[15px] mt-[30px] items-start mb-[10px] flex-col">
+                          <img src={CMS} alt="icon" className="max-w-full" />
+                          <p className="text-[14px] my-0">CMS localization</p>
+                        </div>
+                        <p className="text-[#9e9e9e] text-[12px]">
+                          Translate CMS content for accessibility in any
+                          language.
+                        </p>
+                      </div>
+
+                      <div>
+                        <div className="flex gap-y-[15px] mt-[30px] items-start mb-[10px] flex-col">
+                          <img src={Code} alt="icon" className="max-w-full" />
+                          <p className="text-[14px] my-0">
+                            Embed code by language
+                          </p>
+                        </div>
+                        <p className="text-[#9e9e9e] text-[12px] leading-[1.4]">
+                          Integrate and manage different embed codes for each
+                          language.
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+
+                <motion.div
+                  className="overflow-hidden relative pt-[30px] pr-[30px] bg-cover bg-no-repeat rounded-[10px] md:rounded-[20px]"
+                  style={{ backgroundImage: `url(${Localbg})` }}
+                  initial={{ scale: 1.2 }}
+                  animate={{ scale: 1 }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                >
+                  {/* Foreground Image Animation */}
+                  <motion.img
+                    src={LocalImage}
+                    alt="image"
+                    className="rounded-tr-[10px] w-full max-w-full"
+                    initial={{ x: "100%", opacity: 0 }}
+                    animate={{ x: "0%", opacity: 1 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                  />
+
+                  <div
+                    className="top[-1%] left-[1%] right-[-1%] bottom-[-1%] flex opacity-0 gap-y-[5px] absolute bg-[rgba(7, 7, 9, 0.1)] transition-all duration-400
+                                             ease-in-out translate-x-2 items-center mx-auto flex-col backdrop-blur-[50px] justify-center "
+                  >
+                    <div className="flex gap-y-[5px] flex-col">
+                      <a
+                        href="#"
+                        className="flex gap-x-[10px] items-center py-[17px] px-[20px] justify-center rounded-[100px] bg-[rgba(255, 255, 255, 0.15)] transition-all duration-250 ease-in-out"
+                      >
+                        <img src={playbutton} alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </motion.div>
+              </motion.div>
             </div>
 
-            <div id="customfiles" className="">
+            <div id="customfiles">
               <h2 className="text-[36px] md:text-[42px] lg:text-[48px] mb-[30px] font-[400] leading-[1.2]">
-              Custom files
+                Custom files
               </h2>
-              <div className="card-animation">
-                <div className="flex flex-col mb-[30px] bg-[#242424] p-[20px] md:p-[30px] rounded-[20px] relative overflow-hidden">
-                  {/* Main Content */}
-                  <div className="flex w-full flex-col md:flex-row justify-between items-center md:items-start gap-6">
-                    {/* Left Side: Heading */}
-                    <div className="w-full md:w-1/2 lg:w-[50%]">
-                      <h3 className="text-left text-[30px] md:text-[32px] mb-2 whitespace-pre-wrap">
-                      Keep your web <br/>projects organized
-                      </h3>
-                    </div>
 
-                    {/* Right Side: Paragraph */}
-                    <div className="w-full md:w-1/2 lg:w-[50%] max-w-[430px]">
-                      <p className="text-[16px] mb-[24px] text-[#9e9e9e] whitespace-pre-wrap">
-                      Enjoy an unlimited website builder that gives you options for <br/>customized, quick, and efficient development.
-                      </p>
-                      <div className="flex gap-x-[24px] items-center">
-                        <div className="flex gap-x-[10px] items-center cursor-pointer transition-all duration-200 ease-linear text-white">
-                          <p className="whitespace-pre-wrap">
+              {/* Card Animation */}
+              <motion.div
+                className="flex flex-col mb-[30px] bg-[#242424] p-[20px] md:p-[30px] rounded-[20px] relative overflow-hidden"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              >
+                {/* Main Content */}
+                <div className="flex w-full flex-col md:flex-row justify-between items-center md:items-start gap-6">
+                  {/* Left Side: Heading */}
+                  <div className="w-full md:w-1/2 lg:w-[50%]">
+                    <h3 className="text-left text-[30px] md:text-[32px] mb-2 whitespace-pre-wrap">
+                      Keep your web <br /> projects organized
+                    </h3>
+                  </div>
+
+                  {/* Right Side: Paragraph */}
+                  <div className="w-full md:w-1/2 lg:w-[50%] max-w-[430px]">
+                    <p className="text-[16px] mb-[24px] text-[#9e9e9e] whitespace-pre-wrap">
+                      Enjoy an unlimited website builder that gives you options
+                      for <br />
+                      customized, quick, and efficient development.
+                    </p>
+                    <div className="flex gap-x-[24px] items-center">
+                      <div className="flex gap-x-[10px] items-center cursor-pointer transition-all duration-200 ease-linear text-white">
+                        <p className="whitespace-pre-wrap">
                           See all Custom files features
-                          </p>
-                          <img
-                            src={Right_Arrow}
-                            alt=""
-                            className="transition-all duration-200 ease-in-out hover:translate-x-2"
-                          />
-                        </div>
+                        </p>
+                        <img
+                          src={Right_Arrow}
+                          alt=""
+                          className="transition-all duration-200 ease-in-out hover:translate-x-2"
+                        />
                       </div>
                     </div>
                   </div>
+                </div>
 
-                  {/* Background Image Section - Beneath Content */}
-                  <div
-                    className="mt-[20px] relative p-[10px] md:py-[20px] md:px-[25px] rounded-[10px] lg:rounded-[20px] overflow-hidden bg-cover bg-no-repeat"
-                    style={{
-                      backgroundImage: `url(${CustomBg})`,
-                    }}
-                  >
-                    <img src={CustomImage} alt="rounded-[10px] max-w-full" />
-                  </div>
+                {/* Background Image Animation */}
+                <motion.div
+                  className="mt-[20px] relative p-[10px] md:py-[20px] md:px-[25px] rounded-[10px] lg:rounded-[20px] overflow-hidden bg-cover bg-no-repeat"
+                  style={{ backgroundImage: `url(${CustomBg})` }}
+                  initial={{ scale: 1.1, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                >
+                  {/* Image Animation */}
+                  <motion.img
+                    src={CustomImage}
+                    alt=""
+                    className="rounded-[10px] max-w-full"
+                    initial={{ x: -100, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+                  />
+                </motion.div>
 
-                  <div className="grid grid-cols-2 md:grid-cols-3 mt-[40px] lg:grid-cols-4 gap-x-[20px] md:gap-x-[56px] md:gap-y-[30px]">
-                    <div className="">
+                {/* Features Section */}
+                <div className="grid grid-cols-2 md:grid-cols-3 mt-[40px] lg:grid-cols-4 gap-x-[20px] md:gap-x-[56px] md:gap-y-[30px]">
+                  {[
+                    {
+                      img: Reusable,
+                      title: "Reusable code",
+                      desc: "Write custom CSS and JS files and import them where you need them.",
+                    },
+                    {
+                      img: Files,
+                      title: "Custom files",
+                      desc: "Organize your JS & CSS files for smooth and productive workflows.",
+                    },
+                    {
+                      img: Embed,
+                      title: "Embed code",
+                      desc: "Add unique code blocks anywhere - regardless of page and language.",
+                    },
+                    {
+                      img: Global,
+                      title: "Global code",
+                      desc: "Use custom code globally, ensuring it runs on all pages.",
+                    },
+                  ].map((feature, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.8, delay: 0.2 * index }}
+                    >
                       <div>
                         <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
-                          <img src={Reusable} alt="Icon" className="max-w-full" />
-                          <p className="text-[14px] whitespace-pre-wrap">
-                          Reusable code
-                          </p>
-                        </div>
-                        <p className="text-[#9e9e9e] text-[14px] whitespace-break-spaces">
-                        Write custom CSS and JS files and import them where you need them.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="">
-                      <div>
-                        <div className="flex gap-y-[15px] items-start mb-[10px] flex-col">
-                          <img src={Files} alt="Icon" className="max-w-full" />
-                          <p className="text-[14px] whitespace-pre-wrap">
-                          Custom files
-                          </p>
-                        </div>
-                        <p className="text-[#9e9e9e] text-[14px] ">
-                        Organize your JS & CSS files for smooth and productive workflows.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="">
-                      <div>
-                        <div className="flex gap-y-[15px] mt-[30px] md:mt-0  items-start mb-[10px] flex-col">
                           <img
-                            src={Embed}
+                            src={feature.img}
                             alt="Icon"
                             className="max-w-full"
                           />
                           <p className="text-[14px] whitespace-pre-wrap">
-                          Embed code
+                            {feature.title}
                           </p>
                         </div>
                         <p className="text-[#9e9e9e] text-[14px]">
-                        Add unique code blocks anywhere - regardless of page and language.
+                          {feature.desc}
                         </p>
                       </div>
-                    </div>
-
-                    <div className="">
-                      <div>
-                        <div className="flex gap-y-[15px] mt-[30px] md:mt-0 items-start mb-[10px] flex-col">
-                          <img
-                            src={Global}
-                            alt="Icon"
-                            className="max-w-full"
-                          />
-                          <p className="text-[14px] whitespace-pre-wrap">
-                          Global code
-                          </p>
-                        </div>
-                        <p className="text-[#9e9e9e] text-[14px] ">
-                        Use custom code globally, ensuring it runs on all pages.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                    </motion.div>
+                  ))}
                 </div>
-              </div>
+              </motion.div>
             </div>
-
-
           </div>
         </div>
       </div>

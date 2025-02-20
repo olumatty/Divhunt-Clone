@@ -9,7 +9,6 @@ const Header = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const navigate = useNavigate();
 
-  // Toggle Body Scroll when Mobile Menu Opens
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("overflow-hidden");
@@ -18,17 +17,15 @@ const Header = () => {
     }
   }, [isOpen]);
 
-  // Function to handle scrolling
   const handleScroll = () => {
     if (window.scrollY > lastScrollY) {
-      setIsVisible(window.innerWidth > 1024); // Keep visible for mobile
+      setIsVisible(window.innerWidth > 1024);
     } else {
       setIsVisible(true);
     }
     setLastScrollY(window.scrollY);
   };
 
-  // Add and remove event listener
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -42,72 +39,63 @@ const Header = () => {
         isVisible ? "translate-y-0" : "-translate-y-full lg:-translate-y-full"
       }`}
     >
-      <div className="w-full md:max-w-[1400px] mx-auto px-4">
-        <nav className="flex items-center justify-between py-4 relative">
-          {/* Logo */}
-          <div onClick={() => navigate("/")} className="cursor-pointer">
-            <img src={Logo} alt="Logo" />
-          </div>
+      <div className="w-full md:max-w-[1400px] mx-auto px-6 flex items-center justify-between h-full">
+        {/* Logo */}
+        <div onClick={() => navigate("/")} className="cursor-pointer">
+          <img src={Logo} alt="Logo" className="h-[40px]" />
+        </div>
 
-          {/* Desktop Navigation */}
-          <ul className="hidden lg:flex w-full max-w-[800px] justify-center items-center space-x-10">
-            <li
-              onClick={() => navigate("/marketplace")}
-              className="text-[#9e9e9e] hover:text-white text-[16px] font-semibold cursor-pointer"
-            >
-              MarketPlace
-            </li>
-            <li
-              onClick={() => navigate("/enterprise")}
-              className="text-[#9e9e9e] hover:text-white text-[16px] font-semibold cursor-pointer"
-            >
-              Enterprise
-            </li>
-            <li
-              onClick={() => navigate("/pricing")}
-              className="text-[#9e9e9e] hover:text-white text-[16px] font-semibold cursor-pointer"
-            >
-              Pricing
-            </li>
+        {/* Navigation */}
+        <ul className="hidden lg:flex flex-1 justify-center items-center space-x-10">
           <li
-              onClick={() => navigate("/Testing")}
-              className="text-[#9e9e9e] hover:text-white text-[16px] font-semibold cursor-pointer"
-            >
-              Testing
-            </li>
-          </ul>
-
-          {/* Desktop Buttons */}
-          <div className="hidden lg:flex items-center space-x-10">
-            <button className="text-[#9e9e9e] hover:text-white text-[16px] font-semibold cursor-pointer">
-              Log In
-            </button>
-            <button className="text-white button px-6 py-3 cursor-pointer font-semibold rounded-lg hover:bg-opacity-80">
-              Build for free
-            </button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-white cursor-pointer focus:outline-none p-2 z-[100]"
+            onClick={() => navigate("/marketplace")}
+            className="text-[#9e9e9e] hover:text-white text-[16px] font-semibold cursor-pointer"
           >
-            {isOpen ? <X size={30} /> : <Menu size={30} />}
-          </button>
-        </nav>
+            MarketPlace
+          </li>
+          <li
+            onClick={() => navigate("/enterprise")}
+            className="text-[#9e9e9e] hover:text-white text-[16px] font-semibold cursor-pointer"
+          >
+            Enterprise
+          </li>
+          <li
+            onClick={() => navigate("/pricing")}
+            className="text-[#9e9e9e] hover:text-white text-[16px] font-semibold cursor-pointer"
+          >
+            Pricing
+          </li>
+        </ul>
 
-        {/* Mobile Dropdown Menu */}
+        {/* Buttons */}
+        <div className="hidden lg:flex items-center space-x-6">
+          <button className="text-[#9e9e9e] hover:text-white text-[16px] font-semibold cursor-pointer">
+            Log In
+          </button>
+          <button className="text-white button px-6 py-3 cursor-pointer font-semibold rounded-lg hover:bg-opacity-80">
+            Build for free
+          </button>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="lg:hidden text-white cursor-pointer focus:outline-none p-2 z-[100]"
+        >
+          {isOpen ? <X size={30} /> : <Menu size={30} />}
+        </button>
+      </div>
+
+      {/* Mobile Dropdown Menu */}
+      {isOpen && (
         <div
-          className={`fixed top-0 left-0 w-full h-screen bg-[#070709] text-white transition-all duration-300 ease-in-out transform ${
-            isOpen ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
-          } lg:hidden`}
+          className="fixed top-0 left-0 w-full h-screen bg-[#070709] text-white transition-all duration-300 ease-in-out transform lg:hidden"
         >
           <div className="flex justify-end p-5">
             <button
               onClick={() => setIsOpen(false)}
               className="text-white cursor-pointer"
-            >
-              <X size={30} />
+          >
             </button>
           </div>
 
@@ -144,7 +132,7 @@ const Header = () => {
             </button>
           </ul>
         </div>
-      </div>
+      )}
     </div>
   );
 };
