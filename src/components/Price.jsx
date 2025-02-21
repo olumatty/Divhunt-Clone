@@ -2,7 +2,7 @@ import React from "react";
 
 const Price = () => {
   return (
-    <div className="pb-[60px] pt-[80px] md:pb-[100px]">
+    <div className="pb-[60px] pt-[100px] md:pb-[100px]">
       <div className="w-full block max-w-[1400px] mx-auto px-[20px]">
         <div>
           <div className="w-full max-w-[650px] text-center mx-auto mb-[60px]">
