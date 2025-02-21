@@ -1,6 +1,6 @@
 import React from 'react'
 import Market from '../../components/Market'
-import Templates from '../../components/templates'
+import Templates from '../../components/Templates'
 import MarketCTA from '../../components/MarketCTA'
 const MarketPlace = () => {
   return (
