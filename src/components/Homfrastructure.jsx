@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 
 const Homfrastructure = () => {
   return (
-    <section className='pt-[40px] md:pt-[60px] md:pb-[80px] lg:pt-[140px] lg:pb-[240px]'>
+    <section className='pt-[40px] pb-[30px] md:pt-[60px] md:pb-[80px] lg:pt-[120px] lg:pb-[200px]'>
         <div className='w-full max-w-[1400px] my-0 mx-auto px-[20px]'>
             <div className='gap-y-[60px] md:gap-y-[100px] flex-col flex lg:flex-row relative'>
                 <div className='max-w-full w-full flex gap-y-[100px] lg:max-w-[505px] flex-col'>
@@ -87,7 +87,7 @@ const Homfrastructure = () => {
                 </div>
             </div>
             {/* Right Hand*/}
-            <div className='t279 lg:top-[88.6%]  lg:right-[-11%]'>
+            <div className='t279 lg:top-[86.5%]  lg:right-[-11%]'>
                 <img src={FrastructureImage} alt='image' className='hidden lg:block border border-[#242424] rounded-[20px] max-w-full'/>
                 <div className='hidden lg:grid grid-cols-1 md:grid-cols-2 gap-[20px]'>
                     
