@@ -3,6 +3,8 @@ import Hero from '../../components/Hero'
 import HeroSection from '../../components/HeroSection';
 import Homfrastructure from '../../components/Homfrastructure';
 import Resources from '../../components/Resources';
+import HomeTrust from '../../components/HomeTrust';
+import HomeCTA from '../../components/HomeCTA';
 
 const Home = () => {
   return (
@@ -11,6 +13,8 @@ const Home = () => {
       <HeroSection/>
       <Homfrastructure/>
       <Resources/>
+      <HomeTrust/>
+      <HomeCTA/>
 
 
     </div>

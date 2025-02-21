@@ -33,10 +33,10 @@ const Homfrastructure = () => {
                                 </div>
                                 <div className='flex gap-x-[15px] items-center'>
                                     <div className='flex gap-x-[15px] items-center'>
-                                        <a className='flex gap-x-[10px] items-center cursor-pointer transition-all duration-200 ease-linear decoration-0'>
+                                        <div className='flex gap-x-[10px] items-center cursor-pointer transition-all duration-200 ease-linear decoration-0'>
                                             <p className=''>See all Website Builder features</p>
                                             <img src={Right_Arrow} alt='icon' className='transition-all duration-200 ease-in-out hover:translate-x-2'/>
-                                        </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -87,7 +87,7 @@ const Homfrastructure = () => {
                 </div>
             </div>
             {/* Right Hand*/}
-            <div className='t279 lg:top-[86.5%]  lg:right-[-11%]'>
+            <div className='t279 lg:top-[74.8%]  lg:right-[-11%]'>
                 <img src={FrastructureImage} alt='image' className='hidden lg:block border border-[#242424] rounded-[20px] max-w-full'/>
                 <div className='hidden lg:grid grid-cols-1 md:grid-cols-2 gap-[20px]'>
                     
