@@ -305,12 +305,12 @@ const HeroSection = () => {
                       transition={{ duration: 1, ease: "easeOut" }}
                     >
                       <div className="flex gap-y-[5px] flex-col">
-                        <a
+                        <div
                           href="#"
                           className="flex gap-x-[10px] items-center py-[17px] px-[20px] justify-center rounded-[100px] bg-[rgba(255, 255, 255, 0.15)] transition-all duration-250 ease-in-out"
                         >
                           <img src={playbutton} alt="" />
-                        </a>
+                        </div>
                       </div>
                     </motion.div>
                   </motion.div>

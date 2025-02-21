@@ -42,7 +42,7 @@ const Header = () => {
       <div className="w-full md:max-w-[1400px] mx-auto px-6 flex items-center justify-between h-full">
         {/* Logo */}
         <div onClick={() => navigate("/")} className="cursor-pointer">
-          <img src={Logo} alt="Logo" className="h-[40px]" />
+          <img src={Logo} alt="Logo" className="h-auto max-h-[40px] sm:max-h-[35px]" />
         </div>
 
         {/* Navigation */}
@@ -89,13 +89,13 @@ const Header = () => {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div
-          className="fixed top-0 left-0 w-full h-screen bg-[#070709] text-white transition-all duration-300 ease-in-out transform lg:hidden"
+          className="fixed top-0 left-0 w-full h-screen bg-[#070709] text-white transition-all duration-300 ease-in-out transform lg:hidden overflow-y-auto"
         >
           <div className="flex justify-end p-5">
             <button
               onClick={() => setIsOpen(false)}
               className="text-white cursor-pointer"
-          >
+            >
             </button>
           </div>
 

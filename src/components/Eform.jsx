@@ -11,7 +11,6 @@ const Eform = () => {
             <div className="flex items-center gap-x-2 text-[14px] text-[#a375ff] mb-7">
               <img
                 src={Grow}
-                loading="lazy"
                 alt="Grow"
                 className="max-w-full"
               />
@@ -30,7 +29,6 @@ const Eform = () => {
                 <img
                   src={Arrow}
                   alt="Arrow"
-                  loading="lazy"
                   className="transition-all duration-200 ease-in-out hover:translate-x-2"
                 />
               </div>

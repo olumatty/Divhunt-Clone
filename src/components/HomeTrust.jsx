@@ -60,7 +60,7 @@ const HomeTrust = () => {
                   >
                     <div className="border border-[#242424] flex bg-[#070709] transition-all duration-400 ease-in-out hover:bg-[#2b2b2b] px-[30px] flex-col justify-between py-[30px] rounded-[20px] cursor-pointer leading[1.4]">
                       <div className="flex items-start flex-col ">
-                        <p class="t882">
+                        <p className="t882">
                           Rebuilding our application with the Divhunt team was the
                           best decision I've ever made. The team has a great ability
                           to adapt to their clients, learning so much about our
@@ -85,7 +85,7 @@ const HomeTrust = () => {
     
                     <div className="border border-[#242424] flex bg-[#070709] transition-all duration-400 ease-in-out hover:bg-[#2b2b2b] px-[30px] flex-col justify-between py-[30px] rounded-[20px] cursor-pointer leading[1.4]">
                       <div className="flex items-start flex-col ">
-                        <p class="t882">
+                        <p className="t882">
                           We we're a Webflow only agency, by switching to Divhunt we
                           we're able to DOUBLE our revenue! Their CMS is INSANELY
                           good, probably the only one on the market that can compete
@@ -109,8 +109,7 @@ const HomeTrust = () => {
     
                     <div className="border border-[#242424] flex bg-[#070709] transition-all duration-400 ease-in-out hover:bg-[#2b2b2b] px-[30px] flex-col justify-between py-[30px] rounded-[20px] cursor-pointer leading[1.4]">
                       <div className="flex items-start flex-col ">
-                        <p class="t882">
-                          <p class="t882">
+                          <p className="t882">
                             After 15 years of hard work behind the scenes creating
                             websites, I now know that I don't want to worry about
                             updates, backups etc. I want to be able to build sites
@@ -119,7 +118,7 @@ const HomeTrust = () => {
                             manage themselves and I can just create. That's why the
                             SaaS application and cloud CMS is a great solution.
                           </p>
-                        </p>
+                      
                       </div>
                       <div className="flex gap-x-[10px] mt-[40px] items-center text-[16px] leading-[1.4]">
                         <img

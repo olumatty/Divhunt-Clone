@@ -21,7 +21,6 @@ const Market = () => {
             <div className="cursor-pointer block bg-[#1f1f1f] text-left p-[20px] sm:p-[24px] rounded-[20px] sm:rounded-[24px] text-white hover:bg-[#2b2b2b] transition-all duration-200 ease-linear">
               <img
                 src={Template}
-                loading="lazy"
                 className="block max-w-full w-[24px] mb-[14px] sm:mb-[18px]"
               />
               <h3 className="mb-[14px] sm:mb-[18px] text-[14px] sm:text-[16px] leading-[1.2] font-[400]">
@@ -35,7 +34,6 @@ const Market = () => {
             <div className="cursor-pointer block bg-[#1f1f1f] text-left p-[20px] sm:p-[24px] rounded-[20px] sm:rounded-[24px] text-white hover:bg-[#2b2b2b] transition-all duration-200 ease-linear">
               <img
                 src={Plugins}
-                loading="lazy"
                 className="block max-w-full w-[24px] mb-[14px] sm:mb-[18px]"
               />
               <h3 className="mb-[14px] sm:mb-[18px] text-[14px] sm:text-[16px] leading-[1.2] font-[400]">
@@ -49,7 +47,6 @@ const Market = () => {
             <div className="cursor-pointer block bg-[#1f1f1f] text-left p-[20px] sm:p-[24px] rounded-[20px] sm:rounded-[24px] text-white hover:bg-[#2b2b2b] transition-all duration-200 ease-linear">
               <img
                 src={Applications}
-                loading="lazy"
                 className="block max-w-full w-[24px] mb-[14px] sm:mb-[18px]"
               />
               <h3 className="mb-[14px] sm:mb-[18px] text-[14px] sm:text-[16px] leading-[1.2] font-[400]">

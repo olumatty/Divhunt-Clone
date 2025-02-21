@@ -41,7 +41,6 @@ const Templates = () => {
                   <img
                     src={Template1}
                     alt="template1"
-                    loading="lazy"
                     className="w-full h-full object-cover transition-all duration-600 ease-in-out rounded-[10px] group-hover:scale-110"
                   />
                 </div>
@@ -70,7 +69,6 @@ const Templates = () => {
                   <img
                     src={Template2}
                     alt="template2"
-                    loading="lazy"
                     className="w-full h-full object-cover transition-all duration-600 ease-in-out rounded-[10px] group-hover:scale-110"
                   />
                 </div>
@@ -100,7 +98,6 @@ const Templates = () => {
                   <img
                     src={Template3}
                     alt="template3"
-                    loading="lazy"
                     className="w-full h-full object-cover transition-all duration-600 ease-in-out rounded-[10px] group-hover:scale-110"
                   />
                 </div>
@@ -130,7 +127,6 @@ const Templates = () => {
                   <img
                     src={Template4}
                     alt="template4"
-                    loading="lazy"
                     className="w-full h-full object-cover transition-all duration-600 ease-in-out rounded-[10px] group-hover:scale-110"
                   />
                 </div>
@@ -178,7 +174,6 @@ const Templates = () => {
                   <img
                     src={Template5}
                     alt="template5"
-                    loading="lazy"
                     className="w-full h-full object-cover transition-all duration-600 ease-in-out rounded-[10px] group-hover:scale-110"
                   />
                 </div>
@@ -206,7 +201,6 @@ const Templates = () => {
                   <img
                     src={Template6}
                     alt="template6"
-                    loading="lazy"
                     className="w-full h-full object-cover transition-all duration-600 ease-in-out rounded-[10px] group-hover:scale-110"
                   />
                 </div>
@@ -235,7 +229,6 @@ const Templates = () => {
                   <img
                     src={Template7}
                     alt="template7"
-                    loading="lazy"
                     className="w-full h-full object-cover transition-all duration-600 ease-in-out rounded-[10px] group-hover:scale-110"
                   />
                 </div>
@@ -263,7 +256,6 @@ const Templates = () => {
                   <img
                     src={Template8}
                     alt="template8"
-                    loading="lazy"
                     className="w-full h-full object-cover transition-all duration-600 ease-in-out rounded-[10px] group-hover:scale-110"
                   />
                 </div>
@@ -314,7 +306,6 @@ const Templates = () => {
                 </p>
                 <img
                   src={Typed}
-                  loading="lazy"
                   alt="Typed"
                   className="w-[38px] h-[38px] max-w-[100%] min-w-[38px] rounded-[6px] mb-[30px]"
                 />
@@ -338,7 +329,6 @@ const Templates = () => {
                 </p>
                 <img
                   src={Pagination}
-                  loading="lazy"
                   alt="Pagination"
                   className="w-[38px] h-[38px] max-w-[100%] min-w-[38px] rounded-[6px] mb-[30px]"
                 />
@@ -360,7 +350,6 @@ const Templates = () => {
                 </p>
                 <img
                   src={Scroll}
-                  loading="lazy"
                   alt="Scroll"
                   className="w-[38px] h-[38px] max-w-[100%] min-w-[38px] rounded-[6px] mb-[30px]"
                 />
@@ -381,7 +370,6 @@ const Templates = () => {
                 </p>
                 <img
                   src={Vimeo}
-                  loading="lazy"
                   alt="Vimeo"
                   className="w-[38px] h-[38px] max-w-[100%] min-w-[38px] rounded-[6px] mb-[30px]"
                 />

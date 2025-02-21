@@ -4,6 +4,13 @@ import Resources1 from "../assets/Resource1.webp";
 import RightArrow from "../assets/arrow-right.svg";
 import Resources2 from "../assets/Resources2.webp";
 import Resources3 from "../assets/Resources3.webp";
+import { motion } from "framer-motion";
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
 const Resources = () => {
   return (
     <div className="pt-[40px]  md:pt-[80px] md:pb-[100px] relative lg:pt-[60px] lg:pb-[220px]">
@@ -22,7 +29,6 @@ const Resources = () => {
                   Get started with the best website builder
                 </h2>
               </div>
-
               {/* Right Side */}
               <div className="w-full max-w-[450px]">
                 <p className="text-[#9e9e9e] text-[16px]">
@@ -32,11 +38,17 @@ const Resources = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-[30px] gap-x-[20px] mt-[20px]">
-              <div className="overflow-hidden bg-[#242424] rounded-[20px] cursor-pointer tansition-all duration-200 ease-linear group">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={cardVariants}
+                className="overflow-hidden bg-[#242424] rounded-[20px] cursor-pointer transition-all duration-200 ease-linear group"
+              >
                 <div className="overflow-hidden relative">
                   <img
                     src={Resources1}
-                    className="transition-all durration-500 ease-in-out group-hover:scale-110"
+                    className="transition-all duration-500 ease-in-out group-hover:scale-110"
                   />
                   <div className="top-auto left-0 right-0 bottom-0 h-[50px] absolute bg-gradient-to-b from-[#24242400] to-[var(--Grey-Bg)] mx-auto"></div>
                 </div>
@@ -52,13 +64,19 @@ const Resources = () => {
                     <img src={RightArrow} alt="icon" className="max-w-full" />
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="overflow-hidden bg-[#242424] rounded-[20px] cursor-pointer tansition-all duration-200 ease-linear group">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={cardVariants}
+                className="overflow-hidden bg-[#242424] rounded-[20px] cursor-pointer transition-all duration-200 ease-linear group"
+              >
                 <div className="overflow-hidden relative">
                   <img
                     src={Resources2}
-                    className="transition-all durration-500 ease-in-out group-hover:scale-110"
+                    className="transition-all duration-500 ease-in-out group-hover:scale-110"
                   />
                   <div className="top-auto left-0 right-0 bottom-0 h-[50px] absolute bg-gradient-to-b from-[#24242400] to-[var(--Grey-Bg)] mx-auto"></div>
                 </div>
@@ -69,17 +87,23 @@ const Resources = () => {
                       Find tutorials on Divhunt features and elevate your web development.
                     </p>
                   </div>
-                  <div cldivssName="flex w-[40px] h-[40px] justify-center items-center rounded-[10px] border border-[rgba(158,158,158,0.2)] transition-all duration-300 ease-in-out group-hover:bg-[#9e9e9e]">
+                  <div className="flex w-[40px] h-[40px] justify-center items-center rounded-[10px] border border-[rgba(158,158,158,0.2)] transition-all duration-300 ease-in-out group-hover:bg-[#9e9e9e]">
                     <img src={RightArrow} alt="icon" className="max-w-full" />
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="overflow-hidden bg-[#242424] rounded-[20px] cursor-pointer tansition-all duration-200 ease-linear group">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={cardVariants}
+                className="overflow-hidden bg-[#242424] rounded-[20px] cursor-pointer transition-all duration-200 ease-linear group"
+              >
                 <div className="overflow-hidden relative">
                   <img
                     src={Resources3}
-                    className="transition-all durration-500 ease-in-out group-hover:scale-110"
+                    className="transition-all duration-500 ease-in-out group-hover:scale-110"
                   />
                   <div className="top-auto left-0 right-0 bottom-0 h-[50px] absolute bg-gradient-to-b from-[#24242400] to-[var(--Grey-Bg)] mx-auto"></div>
                 </div>
@@ -94,7 +118,7 @@ const Resources = () => {
                     <img src={RightArrow} alt="icon" className="max-w-full" />
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

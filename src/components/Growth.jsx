@@ -15,7 +15,6 @@ const Growth = () => {
             <div className="flex items-center gap-x-2 text-[14px] text-[#a375ff] mb-[40px]">
               <img
                 src={Growths}
-                loading="lazy"
                 alt="growth Icon"
                 className="max-w-full"
               />
@@ -56,7 +55,6 @@ const Growth = () => {
                         <img
                           src={Performance}
                           alt="performance"
-                          loading="lazy"
                           className="max-w-full"
                         />
                         <p className="text-[22px] font-[500] my-0">
